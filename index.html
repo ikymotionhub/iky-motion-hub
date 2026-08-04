@@ -1350,19 +1350,6 @@ Pilates, Método Feldenkrais®, Yoga y Breathwork: no sólo movemos el cuerpo, r
           <button type="button" class="ob-pill sel" data-val="Algo de experiencia" data-en="Some experience">Algo de experiencia</button>
           <button type="button" class="ob-pill" data-val="Practico regularmente" data-en="I practice regularly">Practico regularmente</button>
         </div>
-        <div class="ob-qlabel" data-en="Preferred time">Horario que prefieres</div>
-        <div class="ob-pills" id="obHorario">
-          <button type="button" class="ob-pill" data-val="Mañana (6–10am)" data-en="Morning (6–10am)">Mañana · 6–10am</button>
-          <button type="button" class="ob-pill" data-val="Mediodía (10am–2pm)" data-en="Midday (10am–2pm)">Mediodía · 10am–2pm</button>
-          <button type="button" class="ob-pill" data-val="Tarde (2–7pm)" data-en="Afternoon (2–7pm)">Tarde · 2–7pm</button>
-          <button type="button" class="ob-pill" data-val="Flexible" data-en="Flexible">Flexible</button>
-        </div>
-        <div class="ob-qlabel" data-en="How often would you like to come?">¿Con qué frecuencia quieres asistir?</div>
-        <div class="ob-pills" id="obFrecuencia">
-          <button type="button" class="ob-pill" data-val="1–2 veces/semana" data-en="1–2 times/week">1–2 / semana</button>
-          <button type="button" class="ob-pill" data-val="3–4 veces/semana" data-en="3–4 times/week">3–4 / semana</button>
-          <button type="button" class="ob-pill" data-val="5+ veces/semana" data-en="5+ times/week">5+ / semana</button>
-        </div>
         <div class="ob-nav">
           <button type="button" class="ob-back" data-back><span data-en="Back">← Atrás</span></button>
           <span class="grow"></span>
@@ -1652,12 +1639,7 @@ document.querySelectorAll('.short[data-yt]').forEach(function(s){
       ob.querySelectorAll('#obExp .ob-pill').forEach(function(x){x.classList.toggle('sel',x===b);});
     });
   });
-  ob.querySelectorAll('#obHorario .ob-pill').forEach(function(b){
-    b.addEventListener('click',function(){state.horario=b.dataset.val;ob.querySelectorAll('#obHorario .ob-pill').forEach(function(x){x.classList.toggle('sel',x===b);});});
-  });
-  ob.querySelectorAll('#obFrecuencia .ob-pill').forEach(function(b){
-    b.addEventListener('click',function(){state.frecuencia=b.dataset.val;ob.querySelectorAll('#obFrecuencia .ob-pill').forEach(function(x){x.classList.toggle('sel',x===b);});});
-  });
+
 
   function markErr(el,bad){el.classList.toggle('err',bad);return !bad;}
   function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
