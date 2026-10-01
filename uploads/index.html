@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IKY Motion Hub · Centro de Somática y Movimiento</title>
+<meta name="description" content="El primer centro especializado en educación somática y movimiento humano del suroccidente colombiano. Pilates, Método Feldenkrais®, Ishka Kankueb Yoga e IKY Breathwork en Cali. Reeducamos tu sistema nervioso para recuperar movilidad, fuerza y calma, sin dolor.">
+<meta name="theme-color" content="#1e2419">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e2419'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='27' fill='%23cda86a' text-anchor='middle' font-weight='600'%3Eiky%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IKY Motion Hub · Centro de Somática y Movimiento">
+<meta property="og:description" content="Tu cuerpo es tu hogar. Aprende a habitarlo. Pilates, Método Feldenkrais®, Yoga y Breathwork en Cali — movilidad, fuerza y calma, sin dolor.">
+<meta property="og:image" content="assets/hero-main.jpg">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IKY Motion Hub · Centro de Somática y Movimiento">
+<meta name="twitter:description" content="Tu cuerpo es tu hogar. Aprende a habitarlo. Somática y movimiento humano en Cali.">
+<meta name="twitter:image" content="assets/hero-main.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+// set theme + lang before paint (no FOUC)
+(function(){
+  try{
+    var t=localStorage.getItem('iky_theme')||'dark';
+    document.documentElement.setAttribute('data-theme',t);
+  }catch(e){}
+  document.documentElement.classList.add('js');
+})();
+</script>
+<style>
+:root,[data-theme="light"]{
+  --bg:#f3ede1;
+  --bg-2:#ece4d5;
+  --band:#222a21;
+  --band-2:#1b211a;
+  --band-text:#faf6ec;
+  --surface:#faf6ec;
+  --surface-2:#efe8da;
+  --text:#272d24;
+  --text-soft:#5d6356;
+  --text-faint:#8b8f81;
+  --accent:#bb7b50;
+  --accent-deep:#a4663d;
+  --gold:#b0863f;
+  --gold-band:#cda86a;
+  --sage:#8a9580;
+  --line:rgba(39,45,36,0.12);
+  --line-soft:rgba(39,45,36,0.07);
+  --shadow:0 1px 2px rgba(39,45,36,.04),0 12px 40px -18px rgba(39,45,36,.22);
+  --shadow-lg:0 2px 4px rgba(39,45,36,.05),0 30px 70px -28px rgba(39,45,36,.4);
+}
+[data-theme="dark"]{
+  --bg:#0e110c;
+  --bg-2:#141810;
+  --band:#171c14;
+  --band-2:#10140e;
+  --band-text:#f1ece0;
+  --surface:#161b13;
+  --surface-2:#1d2318;
+  --text:#f1ece0;
+  --text-soft:#b9bcac;
+  --text-faint:#878b7b;
+  --accent:#c98f5f;
+  --accent-deep:#d9a472;
+  --gold:#cda86a;
+  --gold-band:#cda86a;
+  --sage:#9aa68c;
+  --line:rgba(241,236,224,0.14);
+  --line-soft:rgba(241,236,224,0.06);
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 40px -18px rgba(0,0,0,.7);
+  --shadow-lg:0 2px 4px rgba(0,0,0,.4),0 36px 80px -30px rgba(0,0,0,.85);
+}
+:root{
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Hanken Grotesk',system-ui,sans-serif;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);background:var(--bg);color:var(--text);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  transition:background .5s ease,color .5s ease;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-deep);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--accent);opacity:.7}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::before{display:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em;color:var(--text)}
+h1{font-size:clamp(40px,5vw,66px)}
+h2{font-size:clamp(34px,4.6vw,58px)}
+h3{font-size:clamp(22px,2.4vw,30px)}
+.lead{font-size:clamp(18px,1.5vw,21px);color:var(--text-soft);line-height:1.62;max-width:54ch}
+.serif-em{font-family:var(--serif);font-style:italic;font-weight:400}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:.01em;padding:14px 26px;border-radius:100px;cursor:pointer;border:1px solid transparent;transition:transform .25s cubic-bezier(.2,.8,.3,1),background .25s,color .25s,box-shadow .25s,border-color .25s;white-space:nowrap}
+.btn-primary{background:var(--band);color:var(--band-text)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--text);transform:translateY(-2px)}
+.btn-terra{background:var(--accent);color:#fff}
+.btn-terra:hover{background:var(--accent-deep);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(164,102,61,.6)}
+.btn-cream{background:var(--surface);color:var(--text)}
+.btn-cream:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-wa{background:#1f8a4c;color:#fff}
+.btn-wa:hover{background:#1a7a43;transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(31,138,76,.6)}
+.btn .arr{transition:transform .3s}
+.btn:hover .arr{transform:translateX(4px)}
+.btn-sm{padding:11px 20px;font-size:14px}
+.wa-ico{width:17px;height:17px;flex-shrink:0}
+
+/* reveal */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.js .reveal{opacity:0;transform:translateY(26px)}
+.js .reveal.in{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.js .reveal.in.d1{animation-delay:.08s}.js .reveal.in.d2{animation-delay:.16s}.js .reveal.in.d3{animation-delay:.24s}.js .reveal.in.d4{animation-delay:.32s}
+.js .reveal.shown{opacity:1!important;transform:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}.js .reveal.in{animation:none}}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,box-shadow .4s,padding .4s;padding:20px 0}
+header.scrolled{background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:13px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:baseline;gap:9px;font-family:var(--serif);letter-spacing:.02em}
+.brand .iky{font-size:25px;font-weight:600;color:var(--text)}
+.brand .mh{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--text-faint)}
+.nav-links{display:flex;gap:28px;font-size:14.5px;font-weight:500;color:var(--text-soft)}
+.nav-links a{position:relative;transition:color .25s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--accent);transition:width .3s}
+.nav-links a:hover{color:var(--text)}
+.nav-links a:hover::after{width:100%}
+.nav-tools{display:flex;align-items:center;gap:12px}
+.lang-toggle{display:inline-flex;border:1px solid var(--line);border-radius:100px;overflow:hidden;font-size:12px;font-weight:700;letter-spacing:.04em}
+.lang-toggle button{border:none;background:transparent;color:var(--text-faint);padding:7px 11px;cursor:pointer;transition:background .25s,color .25s}
+.lang-toggle button.on{background:var(--text);color:var(--bg)}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:transform .3s,border-color .25s,background .25s}
+.icon-btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+.icon-btn svg{width:18px;height:18px}
+.icon-btn .moon{display:none}
+[data-theme="dark"] .icon-btn .sun{display:none}
+[data-theme="dark"] .icon-btn .moon{display:block}
+@media(max-width:1080px){.nav-links{display:none}}
+@media(max-width:560px){.brand .mh{display:none}.nav-tools .btn{display:none}}
+
+/* hero */
+.hero{position:relative;padding:150px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero h1{margin:20px 0 24px}
+.hero h1 .accent{color:var(--accent-deep);font-style:italic}
+.hero .lead{margin-bottom:32px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.hero-meta .m{display:flex;flex-direction:column}
+.hero-meta .m .n{font-family:var(--serif);font-size:30px;line-height:1;color:var(--accent-deep)}
+.hero-meta .m .l{font-size:12.5px;color:var(--text-faint);margin-top:5px;letter-spacing:.02em}
+.hero-meta .div{width:1px;background:var(--line)}
+.hero-visual{position:relative}
+.hero-visual .frame{width:100%;height:550px;border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);position:relative}
+.hero-visual .frame img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-visual .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,16,10,.34))}
+.hero-badge{position:absolute;left:-24px;bottom:34px;background:var(--surface);border-radius:18px;padding:16px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;border:1px solid var(--line-soft)}
+.hero-badge .stars{color:var(--gold);font-size:14px;letter-spacing:2px}
+.hero-badge .num{font-family:var(--serif);font-size:30px;line-height:1;color:var(--text)}
+.hero-badge .lab{font-size:11.5px;color:var(--text-soft);line-height:1.3}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;gap:38px}.hero{padding:128px 0 50px}.hero-visual .frame{height:400px}}
+
+/* ticker */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding:16px 0;margin-top:60px}
+.ticker-track{display:flex;gap:46px;white-space:nowrap;width:max-content;animation:scrollx 20s linear infinite}
+.ticker-track span{font-family:var(--serif);font-style:italic;font-size:23px;color:var(--text-soft);display:flex;align-items:center;gap:46px}
+.ticker-track span::after{content:"·";color:var(--accent)}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:100px 0}
+.sec-head{max-width:62ch}
+.sec-head h2{margin:16px 0 0}
+.sec-head .sub{margin-top:18px}
+
+/* band */
+.band{background:var(--band);color:var(--band-text)}
+.band h2,.band h3{color:var(--band-text)}
+.band .eyebrow{color:var(--gold-band)}
+.band .eyebrow::before{background:var(--gold-band)}
+.band .lead{color:color-mix(in srgb,var(--band-text) 76%,transparent)}
+
+/* diferencial */
+.diff-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:center}
+.diff h2{max-width:16ch}
+.diff h2 .gold{color:var(--gold-band);font-style:italic}
+.diff p{color:color-mix(in srgb,var(--band-text) 78%,transparent);margin-top:22px;max-width:50ch;font-size:18px}
+.diff-stats{display:flex;gap:40px;margin-top:38px;flex-wrap:wrap}
+.diff-stats .s .n{font-family:var(--serif);font-size:44px;line-height:1;color:var(--gold-band)}
+.diff-stats .s .l{font-size:13px;color:color-mix(in srgb,var(--band-text) 62%,transparent);margin-top:6px;max-width:18ch}
+.diff-visual .frame{width:100%;height:470px;border-radius:24px;overflow:hidden}
+.diff-visual .frame img{width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:920px){.diff-grid{grid-template-columns:1fr;gap:38px}.diff-visual .frame{height:360px}}
+
+/* servicios */
+.serv{background:var(--bg)}
+.serv-core{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:52px}
+.scard{background:var(--surface);border:1px solid var(--line-soft);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .4s cubic-bezier(.2,.8,.3,1),box-shadow .4s}
+.scard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.scard .ph{position:relative;height:360px;overflow:hidden}
+.scard .ph img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .7s cubic-bezier(.2,.8,.3,1)}
+.scard:hover .ph img{transform:scale(1.05)}
+.scard .ph .badge{position:absolute;top:16px;left:16px;z-index:2;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(6px);color:var(--text);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 13px;border-radius:100px;box-shadow:0 2px 10px rgba(20,16,10,.14)}
+.scard .ph .badge.badge-r{left:auto;right:16px}
+.scard .ph::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,16,10,.22),transparent 34%);pointer-events:none}
+.scard .body{padding:26px 28px 28px;display:flex;flex-direction:column;flex:1}
+.scard h3{margin-bottom:10px}
+.scard p{font-size:15px;color:var(--text-soft);line-height:1.55;flex:1}
+.scard .meta{margin-top:16px;font-size:13px;color:var(--text-faint);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.scard .meta b{color:var(--text);font-weight:600}
+.scard .actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.scard .actions .btn{flex:1;min-width:130px}
+@media(max-width:780px){.serv-core{grid-template-columns:1fr}}
+
+.serv-more{margin-top:60px}
+.serv-more .mhead{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.serv-more h3{font-size:26px}
+.disc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.disc{background:var(--surface);border:1px solid var(--line-soft);border-radius:16px;padding:20px 22px;transition:transform .3s,border-color .3s,box-shadow .3s;display:flex;flex-direction:column;gap:6px}
+.disc:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
+.disc .dn{font-weight:700;font-size:15.5px;color:var(--text);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.disc .dn .ar{color:var(--accent);opacity:0;transform:translateX(-4px);transition:opacity .3s,transform .3s}
+.disc:hover .dn .ar{opacity:1;transform:none}
+.disc .dd{font-size:13px;color:var(--text-faint);line-height:1.45}
+@media(max-width:780px){.disc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.disc-grid{grid-template-columns:1fr}}
+
+/* feature rows (premium alternating image/text) */
+.frows{display:flex;flex-direction:column;gap:26px;margin-top:54px}
+.frow{display:grid;grid-template-columns:1.02fr 1fr;background:var(--surface);border:1px solid var(--line-soft);border-radius:26px;overflow:hidden;box-shadow:var(--shadow);transition:transform .45s cubic-bezier(.2,.8,.3,1),box-shadow .45s}
+.frow:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.frow .fimg{position:relative;min-height:430px;background:var(--surface-2);overflow:hidden}
+.frow .fimg image-slot{position:absolute;inset:0;width:100%;height:100%;display:block}
+.frow .fimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .8s cubic-bezier(.2,.8,.3,1)}
+.frow:hover .fimg img{transform:scale(1.06)}
+.frow .fimg::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(20,16,10,.28),transparent 42%);pointer-events:none;z-index:1}
+.frow .fimg .ftag{position:absolute;top:18px;left:18px;z-index:2;background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(6px);color:var(--text);font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:100px}
+.frow .fbody{padding:46px 50px;display:flex;flex-direction:column;justify-content:center}
+.frow .fbody .kick{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:14px}
+.frow .fbody h3{font-size:clamp(26px,2.6vw,34px);margin-bottom:14px}
+.frow .fbody p{font-size:15.5px;color:var(--text-soft);line-height:1.6}
+.frow .fbody p+p{margin-top:12px}
+.frow .fbody .fmeta{margin-top:18px;font-size:13.5px;color:var(--text-faint);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.frow .fbody .fmeta b{color:var(--text);font-weight:600}
+.frow .fbody .actions{display:flex;gap:11px;margin-top:26px;flex-wrap:wrap}
+.frow.flip .fimg{order:2}
+@media(max-width:860px){
+  .frow,.frow.flip{grid-template-columns:1fr}
+  .frow .fimg,.frow.flip .fimg{order:0;min-height:300px}
+  .frow .fbody{padding:34px 30px}
+}
+
+/* slider */
+.slider-sec{background:var(--bg-2);overflow:hidden}
+.slider-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+.slider-nav{display:flex;gap:10px}
+.slider-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .25s,border-color .25s,background .25s}
+.slider-nav button:hover{transform:translateY(-2px);border-color:var(--accent)}
+.slider-nav button svg{width:20px;height:20px}
+.slider-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 18px;scrollbar-width:none;-ms-overflow-style:none}
+.slider-track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 auto;width:330px;aspect-ratio:1/1;border-radius:20px;overflow:hidden;scroll-snap-align:start;position:relative;box-shadow:var(--shadow);border:1px solid var(--line-soft)}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .7s}
+.slide:hover img{transform:scale(1.04)}
+@media(max-width:560px){.slide{width:78vw}}
+
+/* membresia / plans 
+.plans{background:var(--bg)}
+.plans-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.toggle{display:inline-flex;background:var(--bg-2);border:1px solid var(--line);border-radius:100px;padding:5px;gap:4px;position:relative}
+.toggle button{font-family:var(--sans);font-weight:600;font-size:14px;padding:10px 20px;border:none;background:transparent;color:var(--text-soft);border-radius:100px;cursor:pointer;transition:color .3s;position:relative;z-index:2}
+.toggle button.active{color:var(--band-text)}
+.toggle .pill{position:absolute;top:5px;left:5px;height:calc(100% - 10px);background:var(--band);border-radius:100px;transition:transform .4s cubic-bezier(.3,.9,.3,1),width .4s cubic-bezier(.3,.9,.3,1);z-index:1}
+.toggle .save{font-size:11px;font-weight:700;color:var(--accent-deep);letter-spacing:.05em;margin-left:8px;text-transform:uppercase}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plan{background:var(--surface);border:1px solid var(--line-soft);border-radius:24px;padding:38px 32px;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .4s cubic-bezier(.2,.8,.3,1),box-shadow .4s;position:relative}
+.plan:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.plan .pname{font-family:var(--serif);font-size:30px;color:var(--text)}
+.plan .ptag{font-size:13.5px;color:var(--text-faint);margin-top:4px;min-height:38px}
+.plan .price{display:flex;align-items:baseline;gap:4px;margin:24px 0 4px}
+.plan .price .cur{font-size:18px;font-weight:600;color:var(--text-soft);align-self:flex-start;margin-top:8px}
+.plan .price .val{font-family:var(--serif);font-size:50px;line-height:1;color:var(--text);transition:opacity .25s}
+.plan .price .per{font-size:14px;color:var(--text-faint);font-weight:500}
+.plan .billed{font-size:12.5px;color:var(--text-faint);min-height:18px;margin-bottom:24px}
+.plan ul{list-style:none;display:flex;flex-direction:column;gap:13px;margin:8px 0 30px;flex:1}
+.plan li{display:flex;gap:12px;font-size:15px;color:var(--text-soft);line-height:1.45;align-items:flex-start}
+.plan li svg{flex-shrink:0;margin-top:3px}
+.plan .btn{width:100%}
+.plan.feat{background:var(--band);border-color:var(--band);transform:translateY(-14px)}
+.plan.feat:hover{transform:translateY(-20px)}
+.plan.feat .pname,.plan.feat .price .cur,.plan.feat .price .val{color:var(--band-text)}
+.plan.feat .ptag{color:color-mix(in srgb,var(--band-text) 60%,transparent)}
+.plan.feat .price .per,.plan.feat .billed{color:color-mix(in srgb,var(--band-text) 52%,transparent)}
+.plan.feat li{color:color-mix(in srgb,var(--band-text) 82%,transparent)}
+.plan.feat li b{color:#fff}
+.plan.feat .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 18px;border-radius:100px;white-space:nowrap;box-shadow:0 8px 20px -8px rgba(164,102,61,.7)}
+.check-terra circle{fill:rgba(187,123,80,.16)}.check-terra path{stroke:var(--accent-deep)}
+.check-gold circle{fill:rgba(201,169,106,.18)}.check-gold path{stroke:var(--gold-band)}
+.plan-footnote{text-align:center;font-size:13.5px;color:var(--text-faint);margin-top:32px}
+.plan-footnote a{color:var(--accent-deep);font-weight:600;border-bottom:1px solid rgba(164,102,61,.35)}
+@media(max-width:920px){.plan-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto}.plan.feat{transform:none}.plan.feat:hover{transform:translateY(-7px)}}
+
+/* video */
+.video-sec{background:var(--band-2);color:var(--band-text)}
+.video-sec .eyebrow{color:var(--gold-band)}
+.video-sec .eyebrow::before{background:var(--gold-band)}
+.video-head{text-align:center;max-width:60ch;margin:0 auto 44px}
+.video-head h2{color:var(--band-text);margin-top:16px}
+.video-head p{color:color-mix(in srgb,var(--band-text) 72%,transparent);margin-top:16px;font-size:18px}
+.video-frame{max-width:980px;margin:0 auto;position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;box-shadow:0 40px 90px -40px rgba(0,0,0,.8);border:1px solid rgba(255,255,255,.08);cursor:pointer}
+.video-frame img,.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;border:0}
+.video-frame .veil{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,rgba(10,8,5,.25),rgba(10,8,5,.62));transition:background .4s}
+.video-frame:hover .veil{background:radial-gradient(circle at 50% 45%,rgba(10,8,5,.18),rgba(10,8,5,.5))}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;transition:transform .35s,background .35s}
+.video-frame:hover .play{transform:translate(-50%,-50%) scale(1.08);background:var(--accent)}
+.play svg{width:30px;height:30px;margin-left:5px;fill:#fff}
+.video-cap{position:absolute;left:0;right:0;bottom:0;padding:26px 30px;display:flex;align-items:center;gap:14px;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.5),transparent)}
+.video-cap .vt{font-family:var(--serif);font-size:22px}
+.video-cap .vd{font-size:13px;opacity:.8;margin-left:auto}
+
+/* wordmark logo (Jost, capitalized initials) */
+.brand .wordmark{font-family:'Jost',var(--sans);font-weight:600;font-size:24px;letter-spacing:.004em;line-height:1;color:var(--text);text-transform:none;white-space:nowrap}
+.ob-brand .wordmark{font-family:'Jost',var(--sans);font-weight:600;font-size:23px;letter-spacing:.004em;line-height:1;color:var(--band-text);white-space:nowrap}
+.foot-brand .brand .wordmark{color:var(--text)}
+
+/* short videos grid */
+.shorts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.short{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;cursor:pointer;background:#000;border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 60px -34px rgba(0,0,0,.8);transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+.short:hover{transform:translateY(-5px)}
+.short img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s cubic-bezier(.2,.8,.3,1)}
+.short:hover img{transform:scale(1.06)}
+.short iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.short .sveil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.45));transition:background .4s}
+.short:hover .sveil{background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.32))}
+.short .splay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;transition:transform .3s,background .3s}
+.short:hover .splay{background:var(--accent);transform:translate(-50%,-50%) scale(1.08)}
+.short .splay svg{width:22px;height:22px;margin-left:3px;fill:#fff}
+@media(max-width:860px){.shorts-grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+
+/* service detail modal */
+.svcm{position:fixed;inset:0;z-index:130;display:none;align-items:center;justify-content:center;padding:24px}
+.svcm.open{display:flex}
+.svcm-scrim{position:absolute;inset:0;background:rgba(14,17,12,.62);backdrop-filter:blur(6px);animation:svcFade .3s ease both}
+@keyframes svcFade{from{opacity:0}to{opacity:1}}
+.svcm-card{position:relative;z-index:2;background:var(--surface);border:1px solid var(--line-soft);border-radius:24px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch;box-shadow:var(--shadow-lg);animation:svcPop .42s cubic-bezier(.2,.7,.2,1) both}
+@keyframes svcPop{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:none}}
+.svcm-hero{position:relative;height:186px;overflow:hidden}
+.svcm-hero img{width:100%;height:100%;object-fit:cover;object-position:center}
+.svcm-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,10,.12),rgba(20,16,10,.6))}
+.svcm-hero .svcm-kick{position:absolute;left:26px;bottom:18px;z-index:2;color:#fff}
+.svcm-hero .svcm-kick .k{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.9}
+.svcm-hero .svcm-kick h3{color:#fff;font-size:25px;margin-top:5px;line-height:1.1}
+.svcm-close{position:absolute;top:14px;right:14px;z-index:3;width:38px;height:38px;border-radius:50%;border:none;background:rgba(255,255,255,.92);color:#1a1a1a;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+.svcm-close svg{width:17px;height:17px}
+.svcm-body{padding:22px 26px 26px}
+.svcm-intro{font-size:15px;color:var(--text-soft);line-height:1.6;margin-bottom:18px}
+.acc{border:1px solid var(--line-soft);border-radius:16px;overflow:hidden;margin-bottom:12px;background:var(--surface-2)}
+.acc-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;cursor:pointer;user-select:none}
+.acc-head .at{display:flex;flex-direction:column;gap:3px}
+.acc-head .at .an{font-weight:700;font-size:16px;color:var(--text)}
+.acc-head .at .ap{font-size:12.5px;color:var(--accent-deep);font-weight:600;letter-spacing:.02em}
+.acc-head .aic{flex:0 0 auto;width:27px;height:27px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;transition:transform .35s,background .3s,color .3s;color:var(--text)}
+.acc-head .aic svg{width:15px;height:15px}
+.acc.open .acc-head .aic{transform:rotate(45deg);background:var(--accent);color:#fff;border-color:var(--accent)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .42s cubic-bezier(.2,.7,.2,1)}
+.acc-body .inner{padding:0 18px 18px;font-size:14px;color:var(--text-soft);line-height:1.6}
+.acc-body .price{margin-top:13px;display:inline-flex;align-items:baseline;gap:8px;background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:9px 15px}
+.acc-body .price .amt{font-family:var(--serif);font-size:22px;color:var(--text)}
+.acc-body .price .per{font-size:12.5px;color:var(--text-faint)}
+.svcm-cta{margin-top:10px}
+.svcm-cta .btn{width:100%}
+
+/* ===== Movefulness — premium flagship band (disruptive light section) ===== */
+.move-sec{position:relative;color:#23281c;padding:clamp(78px,9vw,132px) 0 clamp(70px,8vw,120px);overflow:hidden;background:radial-gradient(135% 115% at 12% 12%,#f8f1e4 0%,#ecdcc0 56%,#e0cba0 100%);clip-path:polygon(0 3.4vw,100% 0,100% 100%,0 100%);margin-top:-1px}
+.move-sec .mglow{position:absolute;right:-6%;top:-8%;width:48%;height:72%;background:radial-gradient(circle,rgba(201,150,54,.25),transparent 66%);pointer-events:none;z-index:1}
+.move-sec .mglow.two{left:-10%;right:auto;top:auto;bottom:-14%;width:40%;height:56%;background:radial-gradient(circle,rgba(120,150,110,.22),transparent 68%)}
+.move-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(34px,5vw,74px);align-items:center;position:relative;z-index:2}
+.move-media{position:relative;border-radius:30px;overflow:hidden;box-shadow:0 54px 100px -44px rgba(60,40,10,.55);aspect-ratio:4/5}
+.move-media img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .9s cubic-bezier(.2,.8,.3,1)}
+.move-media:hover img{transform:scale(1.05)}
+.move-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(30,20,8,.34))}
+.move-tag{position:absolute;top:22px;left:22px;z-index:2;background:#1e2419;color:#e9dcc4;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:9px 16px;border-radius:100px;box-shadow:0 8px 24px -8px rgba(30,36,25,.6)}
+.move-kick{font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#a9772f;display:inline-flex;align-items:center;gap:12px}
+.move-kick::before{content:"";width:36px;height:1px;background:#a9772f;opacity:.75}
+.move-title{font-family:var(--serif);font-weight:500;font-size:clamp(42px,5.4vw,70px);line-height:1.01;letter-spacing:-.02em;color:#23281c;margin:16px 0 22px}
+.move-title em{font-style:italic;color:#8a5a24}
+.move-lead{font-size:clamp(17px,1.55vw,20px);line-height:1.58;color:#3a4230;max-width:46ch}
+.move-p{font-size:16px;line-height:1.62;color:#57634b;margin-top:16px;max-width:46ch}
+.move-detail{margin-top:26px;border-top:1px solid rgba(138,90,36,.28);display:flex;flex-direction:column}
+.md-row{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(138,90,36,.22);align-items:baseline}
+.md-lbl{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#a9772f}
+.md-val{font-size:15.5px;color:#33402a;font-weight:500;line-height:1.5}
+.move-price{margin-top:24px;display:inline-flex;align-items:baseline;gap:9px}
+.move-price .amt{font-family:var(--serif);font-size:clamp(34px,4vw,46px);line-height:1;color:#23281c}
+.move-price .per{font-size:14px;color:#8a5a24;font-weight:600;letter-spacing:.02em}
+.move-meta{display:flex;gap:14px;align-items:center;margin-top:28px;font-size:15px;color:#3a4230;flex-wrap:wrap}
+.move-meta b{color:#23281c;font-weight:700}
+.move-meta .dot{width:4px;height:4px;border-radius:50%;background:#a9772f}
+.move-actions{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-move{background:#1e2419;color:#f0e6d2;font-size:16px;padding:16px 34px}
+.btn-move:hover{background:#2c3527;transform:translateY(-2px);box-shadow:0 16px 36px -14px rgba(30,36,25,.6)}
+.move-soon{font-size:13.5px;color:#8a5a24;font-weight:600;letter-spacing:.02em}
+@media(max-width:860px){
+  .move-sec{clip-path:polygon(0 5vw,100% 0,100% 100%,0 100%)}
+  .move-grid{grid-template-columns:1fr;gap:28px}
+  .move-media{aspect-ratio:16/12}
+  .md-row{grid-template-columns:100px 1fr;gap:12px}
+}
+
+/* steps */
+.how{background:var(--surface-2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:52px}
+.step{position:relative;padding-top:62px}
+.step .n{font-family:var(--serif);font-size:20px;color:var(--accent-deep);position:absolute;top:0;left:0;border:1px solid var(--accent);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:24px}
+.step p{font-size:15px;color:var(--text-soft);margin-top:10px;max-width:34ch}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:32px}}
+
+/* testimonials */
+.test{background:var(--bg)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.tcard{background:var(--surface);border:1px solid var(--line-soft);border-radius:22px;padding:32px 30px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.tcard .stars{color:var(--gold);font-size:15px;letter-spacing:3px;margin-bottom:18px}
+.tcard .quote{font-family:var(--serif);font-size:21px;line-height:1.4;color:var(--text);flex:1}
+.tcard .who{display:flex;align-items:center;gap:13px;margin-top:24px;padding-top:22px;border-top:1px solid var(--line-soft)}
+.tcard .who .av{width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
+.tcard .who .nm{font-weight:600;font-size:15px}
+.tcard .who .rl{font-size:13px;color:var(--text-faint)}
+@media(max-width:860px){.test-grid{grid-template-columns:1fr;max-width:460px;margin:48px auto 0}}
+.socials{display:flex;gap:14px;justify-content:center;margin-top:48px;flex-wrap:wrap}
+.soc{display:inline-flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:11px 20px;font-size:14px;font-weight:600;color:var(--text);transition:transform .25s,box-shadow .25s,border-color .25s}
+.soc:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--accent)}
+.soc .h{color:var(--accent-deep)}
+
+/* agenda / cal.com */
+.agenda{background:var(--surface-2)}
+.agenda-head{text-align:center;max-width:60ch;margin:0 auto 40px}
+.agenda-head h2{margin-top:16px}
+.agenda-head p{margin-top:16px;color:var(--text-soft);font-size:18px}
+.cal-wrap{max-width:1000px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);padding:8px}
+#my-cal-inline-feldenkrais{width:100%;height:680px;overflow:auto;border-radius:16px}
+.agenda-note{text-align:center;font-size:13.5px;color:var(--text-faint);margin-top:22px}
+.agenda-note a{color:var(--accent-deep);font-weight:600}
+
+/* ubicacion */
+.loc{background:var(--bg)}
+.loc-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:stretch;margin-top:50px}
+.loc-info{display:flex;flex-direction:column;justify-content:center}
+.loc-info .row{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line-soft)}
+.loc-info .row:last-of-type{border-bottom:none}
+.loc-info .row .ico{width:40px;height:40px;border-radius:50%;background:var(--surface-2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent-deep)}
+.loc-info .row .ico svg{width:19px;height:19px}
+.loc-info .row .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-faint);font-weight:600}
+.loc-info .row .v{font-size:16px;color:var(--text);margin-top:3px;line-height:1.4}
+.loc-info .btn{margin-top:26px;align-self:flex-start}
+.loc-map{border-radius:22px;overflow:hidden;min-height:420px;box-shadow:var(--shadow);border:1px solid var(--line-soft);position:relative}
+.loc-map iframe{width:100%;height:100%;min-height:420px;border:0;display:block;filter:saturate(.9)}
+@media(max-width:860px){.loc-grid{grid-template-columns:1fr}}
+
+/* final cta */
+.final{background:var(--accent);color:#fff;text-align:center;overflow:hidden;position:relative}
+.final::before,.final::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.16)}
+.final::before{width:520px;height:520px;top:-200px;left:-120px}
+.final::after{width:380px;height:380px;bottom:-180px;right:-80px}
+.final .wrap{position:relative;z-index:2;max-width:760px}
+.final .eyebrow{color:rgba(255,255,255,.85);justify-content:center}
+.final .eyebrow::before{background:rgba(255,255,255,.6)}
+.final h2{color:#fff;margin:18px 0 18px}
+.final p{color:rgba(255,255,255,.92);font-size:19px;margin:0 auto 36px;max-width:46ch}
+.final .hero-cta{justify-content:center}
+
+/* footer */
+footer{background:var(--surface-2);padding:70px 0 38px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot-brand .brand{margin-bottom:16px}
+.foot-brand p{font-size:15px;color:var(--text-soft);max-width:34ch}
+.foot-col h4{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-faint);font-weight:700;margin-bottom:16px}
+.foot-col a,.foot-col p{display:block;font-size:15px;color:var(--text-soft);margin-bottom:10px;transition:color .25s}
+.foot-col a:hover{color:var(--accent-deep)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line);font-size:13px;color:var(--text-faint);flex-wrap:wrap}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:32px}}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:55;width:58px;height:58px;border-radius:50%;background:#1f8a4c;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px -10px rgba(31,138,76,.7);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ===== ONBOARDING / RESERVA ===== */
+.ob{position:fixed;inset:0;z-index:120;display:none;opacity:0;transition:opacity .3s}
+.ob.open{display:block;opacity:1}
+.ob-scrim{position:absolute;inset:0;background:rgba(18,15,10,.5);backdrop-filter:blur(4px)}
+.ob-inner{position:absolute;inset:0;display:grid;grid-template-columns:minmax(340px,430px) 1fr;background:var(--bg);overflow:hidden;transform:translateY(16px);transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+.ob.open .ob-inner{transform:none}
+/* aside */
+.ob-aside{position:relative;background:var(--band);color:var(--band-text);display:flex;flex-direction:column;justify-content:space-between;gap:26px;padding:38px 40px;overflow:hidden}
+.oa-photo{position:absolute;inset:0;z-index:0}
+.oa-photo img{width:100%;height:100%;object-fit:cover;opacity:.35}
+.ob-aside::after{content:"";position:absolute;inset:0;background:linear-gradient(165deg,rgba(23,28,20,.66),rgba(14,17,12,.94));z-index:1}
+.ob-aside>*{position:relative;z-index:2}
+.ob-brand{display:flex;align-items:baseline;gap:9px;font-family:var(--serif)}
+.ob-brand .iky{font-size:25px;font-weight:600;color:var(--band-text)}
+.ob-brand .mh{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-band)}
+.oa-head h3{color:var(--band-text);font-size:31px;line-height:1.08;margin-top:10px}
+.oa-head .oa-sub{color:color-mix(in srgb,var(--band-text) 76%,transparent);font-size:15px;margin-top:12px;max-width:32ch;line-height:1.55}
+.oa-steps{display:flex;flex-direction:column;gap:1px}
+.oa-step{display:flex;align-items:center;gap:14px;padding:10px 0;color:color-mix(in srgb,var(--band-text) 52%,transparent);font-size:14.5px;transition:color .3s}
+.oa-step .dot{width:30px;height:30px;border-radius:50%;border:1px solid color-mix(in srgb,var(--band-text) 28%,transparent);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;transition:all .3s}
+.oa-step .dot svg{width:15px;height:15px}
+.oa-step.active{color:var(--band-text)}
+.oa-step.active .dot{background:var(--gold-band);border-color:var(--gold-band);color:var(--band)}
+.oa-step.done .dot{border-color:var(--gold-band);color:var(--gold-band)}
+.oa-trust{font-size:12.5px;color:color-mix(in srgb,var(--band-text) 62%,transparent);display:flex;align-items:center;gap:9px;line-height:1.4}
+.oa-trust svg{width:16px;height:16px;flex-shrink:0;color:var(--gold-band)}
+/* main */
+.ob-main{position:relative;overflow-y:auto;padding:64px clamp(22px,4vw,60px) 46px}
+.ob-close{position:absolute;top:20px;right:22px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:6;transition:border-color .25s,transform .25s}
+.ob-close:hover{border-color:var(--accent);transform:rotate(90deg)}
+.ob-close svg{width:18px;height:18px}
+.ob-step{display:none;max-width:600px;margin:0 auto}
+.ob-step.show{display:block;animation:obIn .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes obIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.ob-kick{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-deep)}
+.ob-h{font-family:var(--serif);font-weight:500;font-size:clamp(27px,3vw,37px);line-height:1.06;margin:12px 0 8px;letter-spacing:-.01em}
+.ob-p{color:var(--text-soft);font-size:16px;max-width:46ch;line-height:1.55}
+/* plan options */
+.ob-plans{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.ob-plan{display:flex;align-items:center;gap:18px;padding:19px 22px;border:1.5px solid var(--line);border-radius:18px;cursor:pointer;background:var(--surface);transition:border-color .25s,box-shadow .25s,transform .25s;text-align:left;position:relative}
+.ob-plan:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ob-plan.sel{border-color:var(--accent-deep);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.ob-plan .radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;position:relative;transition:border-color .25s}
+.ob-plan.sel .radio{border-color:var(--accent-deep)}
+.ob-plan.sel .radio::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--accent-deep)}
+.ob-plan .pinfo{flex:1;min-width:0}
+.ob-plan .pnm{font-weight:700;font-size:17px;color:var(--text);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ob-plan .pnm .rib{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--accent);padding:3px 8px;border-radius:100px}
+.ob-plan .pdesc{font-size:13.5px;color:var(--text-faint);margin-top:3px;line-height:1.4}
+.ob-plan .pprice{text-align:right;flex-shrink:0}
+.ob-plan .pprice .amt{font-family:var(--serif);font-size:24px;color:var(--text);line-height:1}
+.ob-plan .pprice .cad{font-size:11.5px;color:var(--text-faint);margin-top:4px}
+/* billing toggle inside ob */
+.ob-billing{display:inline-flex;background:var(--bg-2);border:1px solid var(--line);border-radius:100px;padding:5px;gap:4px;margin-top:26px}
+.ob-billing button{font-family:var(--sans);font-weight:600;font-size:14px;padding:9px 20px;border:none;background:transparent;color:var(--text-soft);border-radius:100px;cursor:pointer;transition:background .3s,color .3s}
+.ob-billing button.on{background:var(--band);color:var(--band-text)}
+.ob-billing button .sv{font-size:10.5px;color:var(--gold-band);font-weight:700;margin-left:5px}
+.ob-billing button.on .sv{color:var(--gold-band)}
+/* form */
+.ob-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.ob-field{display:flex;flex-direction:column;gap:7px}
+.ob-field.full{grid-column:1/-1}
+.ob-field label{font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--text-soft)}
+.ob-input{font-family:var(--sans);font-size:15.5px;color:var(--text);background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;transition:border-color .2s,box-shadow .2s;width:100%}
+.ob-input::placeholder{color:var(--text-faint)}
+.ob-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.ob-input.err{border-color:#c0492f;box-shadow:0 0 0 3px rgba(192,73,47,.14)}
+/* payment */
+.pay-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;margin-top:26px;align-items:start}
+@media(max-width:720px){.pay-grid{grid-template-columns:1fr}}
+.pay-card-wrap{position:relative}
+.card-visual{background:linear-gradient(135deg,#26301f,#171c14);border-radius:18px;padding:22px 24px;color:#f1ece0;box-shadow:var(--shadow-lg);aspect-ratio:1.6/1;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}
+.card-visual::before{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(205,168,106,.4),transparent 70%);top:-70px;right:-40px}
+.card-visual .cv-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.card-visual .chip{width:38px;height:28px;border-radius:6px;background:linear-gradient(135deg,#d9c07e,#b0863f)}
+.card-visual .brand{font-weight:800;font-style:italic;font-size:18px;letter-spacing:.02em;opacity:.95}
+.card-visual .cv-num{font-family:'Hanken Grotesk',monospace;font-size:19px;letter-spacing:.12em;position:relative;z-index:2}
+.card-visual .cv-bot{display:flex;justify-content:space-between;font-size:11px;position:relative;z-index:2;text-transform:uppercase;letter-spacing:.08em}
+.card-visual .cv-bot .lbl{opacity:.55;font-size:9px;display:block;margin-bottom:3px}
+.pay-summary{background:var(--surface-2);border:1px solid var(--line-soft);border-radius:18px;padding:22px 24px}
+.pay-summary h4{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);font-weight:700;margin-bottom:16px}
+.pay-row{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;color:var(--text-soft);padding:8px 0}
+.pay-row .v{color:var(--text);font-weight:600;text-align:right}
+.pay-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:14px;border-top:1px solid var(--line)}
+.pay-total .tl{font-size:14px;color:var(--text-soft)}
+.pay-total .tv{font-family:var(--serif);font-size:30px;color:var(--text)}
+.pay-total .tv small{font-size:14px;color:var(--text-faint);font-family:var(--sans)}
+.stripe-badge{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-faint);margin-top:16px;justify-content:center}
+.stripe-badge svg{width:14px;height:14px}
+/* nav buttons */
+.ob-nav{display:flex;gap:12px;align-items:center;margin-top:34px;flex-wrap:wrap}
+.ob-nav .grow{flex:1}
+.ob-back{background:transparent;border:none;color:var(--text-soft);font-family:var(--sans);font-weight:600;font-size:14.5px;cursor:pointer;padding:12px 6px;display:inline-flex;align-items:center;gap:7px}
+.ob-back:hover{color:var(--text)}
+.ob-note{font-size:12.5px;color:var(--text-faint);margin-top:16px;line-height:1.5}
+/* spinner + success */
+.ob-spin{width:20px;height:20px;border-radius:50%;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;animation:obspin .7s linear infinite}
+@keyframes obspin{to{transform:rotate(360deg)}}
+.ob-success{text-align:center;max-width:500px;margin:0 auto;padding-top:20px}
+.ob-check{width:88px;height:88px;border-radius:50%;background:color-mix(in srgb,var(--sage) 24%,var(--surface));display:flex;align-items:center;justify-content:center;margin:0 auto 26px;animation:pop .5s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.ob-check svg{width:44px;height:44px;color:#3d7a4f}
+.ob-success .rc{background:var(--surface-2);border:1px solid var(--line-soft);border-radius:16px;padding:20px 24px;text-align:left;margin:26px 0}
+.ob-success .rc .pay-row{padding:6px 0}
+@media(max-width:840px){
+  /* full-screen page — .ob itself is the opaque scroll container, no overlay */
+  .ob{background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;opacity:1;transition:none}
+  .ob-scrim{display:none}
+  .ob-inner{position:relative;inset:auto;display:flex;flex-direction:column;min-height:100dvh;height:auto;overflow:visible;transform:none!important;background:var(--bg)}
+  .ob-aside{padding:20px 22px 22px;gap:16px;min-height:auto;flex:0 0 auto}
+  .ob-aside::after{background:linear-gradient(165deg,rgba(23,28,20,.72),rgba(14,17,12,.95))}
+  .oa-photo img{opacity:.28}
+  .ob-brand .iky{font-size:22px}
+  .oa-head{display:none}
+  .oa-steps{flex-direction:row;gap:6px;justify-content:space-between}
+  .oa-step{flex:1;flex-direction:column;gap:7px;font-size:10.5px;text-align:center;padding:2px 0;min-width:0}
+  .oa-step .dot{width:28px;height:28px}
+  .oa-step span.lbl{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}
+  .oa-trust{display:none}
+  .ob-main{overflow:visible;padding:26px 18px 46px;min-height:0;flex:1 0 auto}
+  .ob-close{position:fixed;top:14px;right:14px;width:40px;height:40px;z-index:10;box-shadow:var(--shadow)}
+  .ob-step{max-width:none}
+  .ob-h{font-size:26px}
+  .ob-plan{padding:15px 16px;gap:13px;border-radius:15px}
+  .ob-plan .pnm{font-size:15.5px;gap:7px}
+  .ob-plan .pdesc{font-size:12.5px}
+  .ob-plan .pprice .amt{font-size:20px}
+  .ob-billing{display:flex;width:100%}
+  .ob-billing button{flex:1;padding:11px 8px;text-align:center}
+  .pay-grid{gap:20px}
+  .ob-nav{margin-top:26px}
+  .ob-nav .btn{flex:1;justify-content:center}
+}
+@media(max-width:520px){
+  .ob-form{grid-template-columns:1fr}
+  .ob-plan{flex-wrap:wrap}
+  .ob-plan .pinfo{flex:1 1 60%}
+  .ob-plan .pprice{text-align:right}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="wordmark">IkyMotionHub</span></a>
+    <nav class="nav-links">
+      <a href="#servicios" data-en="Services">Servicios</a>
+      <a href="#membresia" data-en="Membership">Membresía</a>
+      <a href="#video" data-en="Video">Video</a>
+      <a href="#agenda" data-en="Book">Agenda</a>
+      <a href="#ubicacion" data-en="Location">Ubicación</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle" id="lang">
+        <button data-lang="es" class="on">ES</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="icon-btn" id="theme" aria-label="Cambiar tema">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a0.7 0.7 0 0 0-.95-.9A9.3 9.3 0 1 0 20.9 15.45a0.7 0.7 0 0 0-.9-.95z"/></svg>
+      </button>
+      <button type="button" class="btn btn-primary btn-sm js-book" data-en="Book">Reservar <span class="arr">→</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal" data-en="Somatics &amp; Movement · Cali, Colombia">Centro de Somática y Movimiento · Cali, Colombia</span>
+      <h1 class="reveal d1" data-en="Your body is your home. <span class='accent'>Learn to inhabit it.</span>">Tu cuerpo es tu hogar. <span class="accent">Aprende a habitarlo.</span></h1>
+      <p class="lead reveal d2" data-en="The first center specialized in somatic education and human movement in southwestern Colombia. Pilates, the Feldenkrais Method, Yoga and Breathwork — we don't just move the body, we re-educate the nervous system so you recover mobility, strength and calm, without pain.">El primer centro especializado en educación somática y movimiento humano de Latinoamérica. 
+Pilates, Método Feldenkrais®, Yoga y Breathwork: no sólo movemos el cuerpo, reeducamos tu sistema nervioso para que recuperes movilidad, fuerza y calma, sin dolor.</p>
+      <div class="hero-cta reveal d3">
+        <button type="button" class="btn btn-terra js-book" data-en="Book your place">Reservar tu lugar <span class="arr">→</span></button>
+        <a class="btn btn-ghost" href="#servicios" data-en="Explore services">Explorar servicios</a>
+      </div>
+      <div class="hero-meta reveal d3">
+        <div class="m"><span class="n">+24</span><span class="l" data-en="years of experience">años de experiencia</span></div>
+        <div class="div"></div>
+        <div class="m"><span class="n">5.0★</span><span class="l" data-en="72 Google reviews">72 reseñas en Google</span></div>
+        <div class="div"></div>
+        <div class="m"><span class="n">1º</span><span class="l" data-en="somatics center in the region">centro somático de la región</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="frame"><img src="assets/hero-main.jpg" alt="Instructor guiando una sesión de Pilates en IKY Motion Hub"></div>
+      <div class="hero-badge">
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="num">5.0</div>
+        </div>
+        <span class="lab" data-en="Rated by 72<br>students in Cali">Valorado por 72<br>alumnos en Cali</span>
+      </div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Pilates</span><span>Método Feldenkrais</span><span>Ishka Kankueb Yoga</span><span>IKY Breathwork</span><span>Movefulness</span>
+      <span>Pilates</span><span>Método Feldenkrais</span><span>Ishka Kankueb Yoga</span><span>IKY Breathwork</span><span>Movefulness</span>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAL -->
+<section class="sec band diff" id="filosofia">
+  <div class="wrap diff-grid">
+    <div>
+      <span class="eyebrow reveal" data-en="What makes us different" style="font-size:17px">Lo que nos hace distintos</span>
+      <h2 class="reveal d1" data-en="We don't just move the body, <span class='gold'>we educate the nervous system.</span>" style="font-size:48px">         No sólo mueves tu cuerpo, <span class="gold">reeducas tu sistema nervioso.</span></h2>
+      <p class="reveal d2" data-en="Specialists in human movement and functional biomechanics, with international accreditations and over 24 years of experience in somatic education. We give you access to the most effective practices to resolve musculoskeletal pain that physiotherapy hasn't solved.">Especialistas en movimiento humano y biomecánica funcional, con acreditaciones internacionales y más de 24 años de experiencia en educación somática. Te damos acceso a las prácticas más eficaces para resolver dolores osteomusculares que la fisioterapia no ha podido solucionar.</p>
+      <div class="diff-stats reveal d3">
+        <div class="s"><div class="n">+24</div><div class="l" data-en="years in somatic education">años en educación somática</div></div>
+        <div class="s"><div class="n">12+</div><div class="l" data-en="disciplines under one roof">disciplinas bajo un mismo techo</div></div>
+        <div class="s"><div class="n">100%</div><div class="l" data-en="focused on pain-free movement">enfocado en movilidad sin dolor</div></div>
+      </div>
+    </div>
+    <div class="diff-visual reveal d2">
+      <div class="frame"><img src="assets/pilates-stretch.jpg" alt="Estiramiento asistido guiado en IKY Motion Hub"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="sec serv" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-en="Our practices" style="font-size:20px">NUESTRA OFERTA DE CLASES</span>
+      <p class="lead sub" data-en="These are our core practices. Book on WhatsApp or schedule online, and open each full page for times and prices.">Estas son nuestras prácticas principales. Reserva por WhatsApp o agenda online, y abre la página completa de cada una para horarios y precios.</p>
+    </div>
+
+    <div class="serv-core">
+      <!-- Pilates -->
+      <article class="scard reveal d1">
+        <div class="ph"><img src="assets/pilates-plank.jpg" alt="Clase de Pilates semipersonalizado"><span class="badge">Pilates</span></div>
+        <div class="body">
+          <h3 data-en="Pilates · semi-personalized">Full IMH Pilates · Personalizado y Semipersonalizado</h3>
+          <p data-en="Semi-personalized classes that strengthen you from the inside out: connect with your center and build strength, endurance, agility and balance." style="color:#DBDED1;flex-grow:1;font-weight:400">IMH Pilates combina control, equilibrio, fuerza, fléxibilidad, resistencia, agilidad, movilidad, respiración y dominio corporal a partir de la comprensión neurológica del movimiento.
+          <br>Somos la primera escuela que enseña Pilates desde las técnicas de la biomecánica funcional. 
+          <br>Modalidades: Pilates Mat, Fitball, Reformer, Cadillac, Wanda, Barrel, Corrector Espinal, Spring Board, Escalera Sueca, Tabla de Saltos, Orbitadores y Discos.</p>
+          <div class="meta"><b>50 min</b> · <span data-en="Mon–Fri 6:10am–7pm">L–V 6:10am–7pm</span> · <span data-en="semi-personalized">semipersonalizado</span></div>
+          <div class="actions">
+            <button type="button" class="btn btn-terra btn-sm js-book" data-practice="Pilates" data-en="Book">Reservar <span class="arr">→</span></button>
+            <button type="button" class="btn btn-ghost btn-sm" data-svc="pilates" data-en="More info">Ver más</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Feldenkrais -->
+      <article class="scard reveal d2">
+        <div class="ph"><img src="assets/feldenkrais.jpg" alt="Sesión de Método Feldenkrais en IKY Motion Hub" loading="lazy"><span class="badge badge-r">Método Feldenkrais®</span></div>
+        <div class="body">
+          <h3 data-en="Feldenkrais Method®">Método Feldenkrais®</h3>
+          <p data-en="The most advanced system for refining human movement. ATM group lessons and one-to-one Functional Integration to release pain and re-learn how you move." style="color:#DBDED1">El sistema más avanzado para perfeccionar el movimiento humano. Sesiones grupales ATM: Autoconsciencia a Través del Movimiento e IF: Integración Funcional 1:1 para liberar dolores, recuperarse rápidamente  de lesiones, volverte mucho más ágil, flexible y fuerte, y reaprender cómo te mueves.</p>
+          <div class="meta"><b>ATM + IF</b> · <span data-en="Wed 11am &amp; 6:30pm">Mié 11am y 6:30pm</span></div>
+          <div class="actions">
+            <a class="btn btn-terra btn-sm js-book" href="#" data-practice="Método Feldenkrais" data-en="Book">Reservar <span class="arr">→</span></a>
+            <a class="btn btn-ghost btn-sm" href="https://www.ikymotionhub.com/feldenkrais" target="_blank" rel="noopener" data-en="More info">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Yoga -->
+      <article class="scard reveal d1">
+        <div class="ph"><img src="assets/yoga.jpg" alt="Práctica de Ishka Kankueb Yoga en IKY Motion Hub" loading="lazy"><span class="badge badge-r">Ishka Kankueb Yoga®</span></div>
+        <div class="body">
+          <h3 data-en="Yoga · Ishka Kankueb">Ishka Kankueb Yoga</h3>
+          <p data-en="The most revolutionary, technical and non-religious yoga. A pioneering system blending conscious movement, functional biomechanics and drishtis. For everyone.">El yoga más revolucionario, técnico y NO religioso. Un sistema pionero que aplica movimiento consciente, biomecánica funcional y drishtis. Apto para todos.</p>
+          <div class="meta"><b><span data-en="Group">Grupal</span></b> · <span data-en="Mon–Fri 6am · Mon &amp; Thu 7pm">L–V 6am · L y J 7pm</span></div>
+          <div class="actions">
+            <a class="btn btn-terra btn-sm js-book" href="#" data-practice="Ishka Kankueb Yoga" data-en="Book">Reservar <span class="arr">→</span></a>
+            <a class="btn btn-ghost btn-sm" href="https://www.ikymotionhub.com/yoga" target="_blank" rel="noopener" data-en="More info">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Breathwork -->
+      <article class="scard reveal d2">
+        <div class="ph"><img src="assets/amb-soundbath.jpg" alt="Sesión de IKY Breathwork y sonido" loading="lazy"><span class="badge">Breathwork</span></div>
+        <div class="body">
+          <h3 data-en="IKY Breathwork">IKY Breathwork</h3>
+          <p data-en="The most sophisticated breathing techniques to master your respiratory system and the muscles of respiration, taking your athletic and artistic practices to another level.">Las más sofisticadas y completas técnicas para mejorar y dominar tu función respiratorio, así como los músculos encargados de la misma, y llevar a otro nivel tus prácticas deportivas y/o artísticas, mejorar tu postura, movilidad y flexibilidad, fortalecer tu core, así como dominar el flujo mental y emocional.</p>
+          <div class="meta"><b>1 hora</b> · <span data-en="Wed 9:30am">Mié 9:30am</span></div>
+          <div class="actions">
+            <a class="btn btn-terra btn-sm js-book" href="#" data-practice="IKY Breathwork" data-en="Book">Reservar <span class="arr">→</span></a>
+            <a class="btn btn-ghost btn-sm" href="https://www.ikymotionhub.com/breathwork" target="_blank" rel="noopener" data-en="More info">Ver más</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== MOVEFULNESS · PROGRAMA INSIGNIA ===== -->
+<section class="sec move-sec" id="movefulness">
+  <div class="mglow"></div><div class="mglow two"></div>
+  <div class="wrap move-grid">
+    <div class="move-media reveal">
+      <span class="move-tag" data-en="Flagship program">Programa insignia</span>
+      <img src="assets/amb-bowls.jpg" alt="Programa Movefulness · sound healing en IKY Motion Hub" loading="lazy">
+    </div>
+    <div class="move-body reveal d1">
+      <span class="move-kick" data-en="Integral wellbeing">Bienestar integral</span>
+      <h2 class="move-title">Programa <em>Movefulness</em></h2>
+      <p class="move-lead" data-en="A complete program to cultivate your physical, emotional and mental health, and full-body relaxation.">Programa completo para cultivar tu salud física, emocional y mental, y la relajación del cuerpo.</p>
+      <div class="move-detail">
+        <div class="md-row">
+          <span class="md-lbl" data-en="Format">Formato</span>
+          <span class="md-val" data-en="2 days a week · 9:30am–12pm">2 días a la semana · 9:30am – 12pm</span>
+        </div>
+        <div class="md-row">
+          <span class="md-lbl" data-en="Days">Días</span>
+          <span class="md-val">Mar y Jue&nbsp;&nbsp;·&nbsp;&nbsp;Mié y Vie</span>
+        </div>
+        <div class="md-row">
+          <span class="md-lbl" data-en="You'll receive">Recibirás</span>
+          <span class="md-val">Pilates Funcional · IKYnesis (Movimiento) · Breathwork / Yoga Nidra</span>
+        </div>
+      </div>
+      <div class="move-price"><span class="amt">$260.000</span><span class="per" data-en="monthly">mensuales</span></div>
+      <div class="move-actions">
+        <button type="button" class="btn btn-move js-book" data-practice="Programa Movefulness" data-en="Book my place">Reservar mi lugar <span class="arr">→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDER -->
+<section class="sec slider-sec" id="galeria">
+  <div class="wrap">
+    <div class="slider-head reveal">
+      <div class="sec-head">
+        <span class="eyebrow" data-en="The studio in motion">El estudio en movimiento</span>
+        <h2 data-en="A look inside IKY.">Un vistazo dentro de IKY.</h2>
+      </div>
+      <div class="slider-nav">
+        <button id="slidePrev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button id="slideNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="slider-track reveal" id="slider">
+      <div class="slide"><img src="assets/pilates-hang.jpg" alt="Pilates en el Cadillac"></div>
+      <div class="slide"><img src="assets/pilates-plank.jpg" alt="Pilates semipersonalizado"></div>
+      <div class="slide"><img src="assets/amb-soundbath.jpg" alt="Sesión de sonido y meditación"></div>
+      <div class="slide"><img src="assets/pilates-guide.jpg" alt="Instructor guiando la práctica"></div>
+      <div class="slide"><img src="assets/pilates-legs.jpg" alt="Trabajo de piernas en reformer"></div>
+      <div class="slide"><img src="assets/amb-bowls.jpg" alt="Cuencos y sonido en IKY"></div>
+      <div class="slide"><img src="assets/pilates-stretch.jpg" alt="Estiramiento asistido en reformer"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBRESIA -->
+<section class="sec plans" id="membresia">
+  <div class="wrap">
+    <div class="plans-top">
+      <div class="sec-head">
+        <span class="eyebrow reveal" data-en="Memberships">Membresías</span>
+        <h2 class="reveal d1" data-en="Choose how you want to inhabit yourself.">Elige cómo quieres habitarte.</h2>
+      </div>
+      <div class="toggle reveal d2" id="billing" role="group" aria-label="Periodo">
+        <span class="pill" id="pill"></span>
+        <button class="active" data-mode="mensual" data-en="Monthly">Mensual</button>
+        <button data-mode="anual" data-en="Yearly">Anual <span class="save" data-en="−2 months">−2 meses</span></button>
+      </div>
+    </div>
+    <div class="plan-grid">
+      <div class="plan reveal d1">
+        <div class="pname">Explora</div>
+        <div class="ptag" data-en="To start at your own pace in one practice.">Para empezar a tu ritmo en una práctica.</div>
+        <div class="price"><span class="cur">$</span><span class="val" data-mensual="240.000" data-anual="200.000">240.000</span><span class="per">/mes</span></div>
+        <div class="billed" data-anual="Facturado anual · 2 meses de regalo" data-en="Flexible monthly billing">Facturación mensual flexible</div>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="8 classes/month across Yoga, Feldenkrais or Breathwork">8 clases al mes entre Yoga, Feldenkrais o Breathwork</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="1-hour group classes">Clases grupales de 1 hora</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Standard online booking">Reserva online estándar</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="First trial class at $30.000">Primera clase de prueba a $30.000</span></li>
+        </ul>
+        <button type="button" class="btn btn-ghost js-book" data-plan="Explora" data-en="Start with Explora">Empezar con Explora</button>
+      </div>
+
+      <div class="plan feat reveal d2">
+        <span class="ribbon" data-en="★ The premium membership">★ La membresía premium</span>
+        <div class="pname">Habita</div>
+        <div class="ptag" data-en="Unlimited Pilates + the full somatic method.">Pilates ilimitado + el método somático completo.</div>
+        <div class="price"><span class="cur">$</span><span class="val" data-mensual="390.000" data-anual="325.000">390.000</span><span class="per">/mes</span></div>
+        <div class="billed" data-anual="Facturado anual · 2 meses de regalo" data-en="Flexible monthly billing">Facturación mensual flexible</div>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Semi-personalized Pilates <b>up to 3×/week</b>">Pilates semipersonalizado <b>hasta 3 veces/semana</b></span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Feldenkrais &amp; Breathwork included">Feldenkrais y Breathwork incluidos</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Yoga &amp; Meditation included">Yoga &amp; Meditación incluido</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="1 monthly 1:1 session with an instructor">1 sesión 1:1 al mes con instructor</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Initial somatic assessment">Evaluación somática inicial</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-gold"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Priority schedule booking">Prioridad de reserva de horarios</span></li>
+        </ul>
+        <button type="button" class="btn btn-cream js-book" data-plan="Habita" data-en="I want Habita">Quiero la membresía Habita <span class="arr">→</span></button>
+      </div>
+
+      <div class="plan reveal d3">
+        <div class="pname">Plenitud</div>
+        <div class="ptag" data-en="Total, unlimited access to the whole house.">Acceso total e ilimitado a toda la casa.</div>
+        <div class="price"><span class="cur">$</span><span class="val" data-mensual="560.000" data-anual="466.000">560.000</span><span class="per">/mes</span></div>
+        <div class="billed" data-anual="Facturado anual · 2 meses de regalo" data-en="Flexible monthly billing">Facturación mensual flexible</div>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="<b>Unlimited</b> access to all practices">Acceso <b>ilimitado</b> a todas las prácticas</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="2 monthly 1:1 sessions">2 sesiones 1:1 al mes</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="1 guest per month">1 invitado al mes</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Quarterly progress review">Valoración trimestral de progreso</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" class="check-terra"><circle cx="10" cy="10" r="10"/><path d="M6 10.5l2.5 2.5L14.5 7" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-en="Everything in Habita">Todo lo de Habita</span></li>
+        </ul>
+        <button type="button" class="btn btn-ghost js-book" data-plan="Plenitud" data-en="Live in Plenitud">Vivir en Plenitud</button>
+      </div>
+    </div>
+    <p class="plan-footnote reveal" data-en="Prefer to pay per class or in packs? Single class $55.000 · pack of 8 $240.000. <a href='https://wa.me/573153161875' target='_blank' rel='noopener'>Message us</a> and we'll build your plan.">¿Prefieres pagar por clase o por paquetes? Clase individual $55.000 · paquete de 8 $240.000. <a href="https://wa.me/573153161875" target="_blank" rel="noopener">Escríbenos</a> y armamos tu plan.</p>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="sec video-sec" id="video">
+  <div class="wrap">
+    <div class="video-head reveal">
+      <span class="eyebrow center" data-en="Watch IKY">Conoce IKY</span>
+      <h2 data-en="Step inside the Hub.">Entra al Hub.</h2>
+      <p data-en="A short film about who we are: the space, the method and the people who move with us in Cali.">Un cortometraje sobre quiénes somos: el espacio, el método y las personas que se mueven con nosotros en Cali.</p>
+    </div>
+    <div class="video-frame reveal d1" id="videoFrame" role="button" tabindex="0" aria-label="Reproducir video">
+      <img src="assets/pilates-guide.jpg" alt="Video IKY Motion Hub" id="videoPoster">
+      <div class="veil"></div>
+      <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="video-cap">
+        <span class="vt" data-en="IKY Motion Hub — Somatics &amp; Movement">IKY Motion Hub — Somática y Movimiento</span>
+        <span class="vd" data-en="Play ▸">Reproducir ▸</span>
+      </div>
+    </div>
+
+    <div class="video-head reveal" style="margin-top:66px;margin-bottom:0">
+      <span class="eyebrow center" data-en="In motion">En movimiento</span>
+      <h2 data-en="Real classes, real people.">Clases reales, personas reales.</h2>
+    </div>
+    <div class="shorts-grid reveal d1">
+      <div class="short" data-yt="VePcRy3vptY" role="button" tabindex="0" aria-label="Reproducir video">
+        <img loading="lazy" src="https://i.ytimg.com/vi/VePcRy3vptY/hqdefault.jpg" alt="Video IKY Motion Hub">
+        <div class="sveil"></div><div class="splay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+      <div class="short" data-yt="jjK4SKle9Mc" role="button" tabindex="0" aria-label="Reproducir video">
+        <img loading="lazy" src="https://i.ytimg.com/vi/jjK4SKle9Mc/hqdefault.jpg" alt="Video IKY Motion Hub">
+        <div class="sveil"></div><div class="splay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+      <div class="short" data-yt="MI-d9d0vhaA" role="button" tabindex="0" aria-label="Reproducir video">
+        <img loading="lazy" src="https://i.ytimg.com/vi/MI-d9d0vhaA/hqdefault.jpg" alt="Video IKY Motion Hub">
+        <div class="sveil"></div><div class="splay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+      <div class="short" data-yt="z02rb2knSis" role="button" tabindex="0" aria-label="Reproducir video">
+        <img loading="lazy" src="https://i.ytimg.com/vi/z02rb2knSis/hqdefault.jpg" alt="Video IKY Motion Hub">
+        <div class="sveil"></div><div class="splay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-en="How your journey begins">Cómo empieza tu proceso</span>
+      <h2 data-en="Three steps to inhabit yourself again.">Tres pasos para volver a habitarte.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal d1"><span class="n">01</span><h3 data-en="Book a trial class">Reserva tu clase de prueba</h3><p data-en="Come meet us. Live a first session and tell us about your movement history and goals.">Ven a conocernos. Vives una primera sesión y nos cuentas tu historia de movimiento y tus metas.</p></div>
+      <div class="step reveal d2"><span class="n">02</span><h3 data-en="Somatic assessment">Evaluación somática</h3><p data-en="We map your route: tensions, patterns and the membership that best supports your process.">Diseñamos tu ruta: tensiones, patrones y la membresía que mejor acompaña tu proceso.</p></div>
+      <div class="step reveal d3"><span class="n">03</span><h3 data-en="Inhabit your practice">Habita tu práctica</h3><p data-en="Activate your membership and start moving with awareness, strength and freedom. Pain-free, at your pace.">Activas tu membresía y empiezas a moverte con conciencia, fuerza y libertad. Sin dolor, a tu ritmo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="sec test" id="testimonios">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto">
+      <span class="eyebrow center" data-en="Those who already inhabit IKY">Quienes ya habitan IKY</span>
+      <h2 data-en="Movement stories.">Historias de movimiento.</h2>
+    </div>
+    <div class="test-grid">
+      <div class="tcard reveal d1"><div class="stars">★★★★★</div><p class="quote" data-en="“I came in with chronic lower-back pain and for the first time understood how my body moves. Feldenkrais changed my relationship with pain.”">“Llegué con dolor lumbar crónico y por primera vez entendí cómo se mueve mi cuerpo. El Feldenkrais cambió mi relación con el dolor.”</p><div class="who"><div class="av">M</div><div><div class="nm" data-en="Student name">Nombre del alumno</div><div class="rl" data-en="Habita member · 8 months">Miembro Habita · 8 meses</div></div></div></div>
+      <div class="tcard reveal d2"><div class="stars">★★★★★</div><p class="quote" data-en="“Semi-personalized Pilates is on another level. I feel stronger and, above all, more aware and present day to day.”">“El Pilates semipersonalizado es otra cosa. Me siento más fuerte y, sobre todo, más consciente y presente en el día a día.”</p><div class="who"><div class="av">C</div><div><div class="nm" data-en="Student name">Nombre del alumno</div><div class="rl" data-en="Plenitud member · 1 year">Miembro Plenitud · 1 año</div></div></div></div>
+      <div class="tcard reveal d3"><div class="stars">★★★★★</div><p class="quote" data-en="“Breathwork gave me tools to regulate my anxiety. I leave every class with my nervous system at peace.”">“El breathwork me dio herramientas para regular mi ansiedad. Salgo de cada clase con el sistema nervioso en calma.”</p><div class="who"><div class="av">A</div><div><div class="nm" data-en="Student name">Nombre del alumno</div><div class="rl" data-en="Explora member · 4 months">Miembro Explora · 4 meses</div></div></div></div>
+    </div>
+    <div class="socials reveal">
+      <a class="soc" href="https://www.instagram.com/iky.motion.hub/" target="_blank" rel="noopener"><span class="h">Instagram</span> @iky.motion.hub</a>
+      <a class="soc" href="https://www.tiktok.com/@iky.motion.hub" target="_blank" rel="noopener"><span class="h">TikTok</span> @iky.motion.hub</a>
+      <a class="soc" href="https://www.youtube.com/@ikymotionhub" target="_blank" rel="noopener"><span class="h">YouTube</span> IKY Motion Hub</a>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA / CAL.COM -->
+<section class="sec agenda" id="agenda">
+  <div class="wrap">
+    <div class="agenda-head reveal">
+      <span class="eyebrow center" data-en="Book online">Agenda online</span>
+      <h2 data-en="Reserve your session in real time.">Reserva tu sesión en tiempo real.</h2>
+      <p data-en="Pick a day and time for your Feldenkrais session directly from our live calendar.">Elige día y hora para tu sesión de Feldenkrais directamente desde nuestro calendario en vivo.</p>
+    </div>
+    <div class="cal-wrap reveal d1">
+      <div id="my-cal-inline-feldenkrais"></div>
+    </div>
+    <p class="agenda-note reveal" data-en="Prefer to write to us? <a href='https://wa.me/573153161875' target='_blank' rel='noopener'>Book on WhatsApp →</a>">¿Prefieres escribirnos? <a href="https://wa.me/573153161875" target="_blank" rel="noopener">Reserva por WhatsApp →</a></p>
+  </div>
+</section>
+
+<!-- UBICACION -->
+<section class="sec loc" id="ubicacion">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-en="Find us">Encuéntranos</span>
+      <h2 data-en="Come move with us in Cali.">Ven a moverte con nosotros en Cali.</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-info reveal d1">
+        <div class="row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="k" data-en="Address">Dirección</div><div class="v">Av. 3 Oeste # 7-131<br>Barrio Santa Rita, Cali — Valle del Cauca</div></div></div>
+        <div class="row"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg></span><div><div class="k" data-en="WhatsApp · Bookings">WhatsApp · Reservas</div><div class="v">+57 315 316 1875</div></div></div>
+        <div class="row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 18l-1 4a16 16 0 0 1-14-14z"/></svg></span><div><div class="k" data-en="Phone">Teléfono</div><div class="v">(57) 301 685 97 18</div></div></div>
+        <div class="row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><div class="k" data-en="Email">Correo</div><div class="v">iky.motion.hub@gmail.com</div></div></div>
+        <div class="row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><div class="k" data-en="Hours">Horario</div><div class="v" data-en="Mon–Fri 6:00am – 7:00pm">Lunes a Viernes 6:00am – 7:00pm</div></div></div>
+        <a class="btn btn-terra" href="https://www.google.com/maps/search/?api=1&query=Av.+3+Oeste+%237-131,+Cali,+Valle+del+Cauca" target="_blank" rel="noopener" data-en="Get directions">Cómo llegar <span class="arr">→</span></a>
+      </div>
+      <div class="loc-map reveal d2">
+        <iframe title="Mapa IKY Motion Hub" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%203%20Oeste%20%237-131%2C%20Cali%2C%20Valle%20del%20Cauca&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="sec final" id="contacto">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-en="Start today">Empieza hoy</span>
+    <h2 class="reveal d1" data-en="Begin your transformation today.">Empieza tu transformación hoy mismo.</h2>
+    <p class="reveal d2" data-en="Book your trial class or tell us which membership calls to you. We'll walk you back to your mobility, strength and freedom.">Reserva tu clase de prueba o cuéntanos qué membresía te llama. Te acompañamos de regreso a tu movilidad, fuerza y libertad.</p>
+    <div class="hero-cta reveal d3">
+      <button type="button" class="btn btn-cream js-book" data-en="Book your place">Reservar tu lugar <span class="arr">→</span></button>
+      <a class="btn" style="background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.35)" href="#agenda" data-en="See live calendar">Ver calendario en vivo</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="wordmark">IkyMotionHub</span></a>
+        <p data-en="Rediscover your mobility, strength and flexibility through body awareness. Your body is your home — learn to inhabit it better.">Redescubre tu movilidad, fuerza y flexibilidad a través de la conciencia corporal. Tu cuerpo es tu hogar — aprende a habitarlo mejor.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Visit us">Visítanos</h4>
+        <p>Av. 3 Oeste # 7-131<br>Santa Rita, Cali</p>
+        <a href="https://wa.me/573153161875" target="_blank" rel="noopener">WhatsApp · 315 316 1875</a>
+        <a href="tel:+573016859718">Tel. (57) 301 685 97 18</a>
+        <a href="mailto:iky.motion.hub@gmail.com">iky.motion.hub@gmail.com</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Follow us">Síguenos</h4>
+        <a href="https://www.instagram.com/iky.motion.hub/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@iky.motion.hub" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@ikymotionhub" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-en="© 2026 IKY Motion Hub · Somatic education and human movement.">© 2026 IKY Motion Hub · Educación somática y movimiento humano.</span>
+      <span>Cali · Colombia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== ONBOARDING / RESERVA ===== -->
+<div class="ob" id="ob" role="dialog" aria-modal="true" aria-label="Reserva">
+  <div class="ob-scrim" data-ob-close></div>
+  <div class="ob-inner">
+    <aside class="ob-aside">
+      <div class="oa-photo"><img src="assets/hero-main.jpg" alt=""></div>
+      <div>
+        <span class="ob-brand"><span class="wordmark">IkyMotionHub</span></span>
+        <div class="oa-head">
+          <h3 data-en="Reserve your place at the Hub">Reserva tu lugar en el Hub</h3>
+          <p class="oa-sub" data-en="In a few steps you choose your plan and secure your spot. Pain-free, at your pace.">En pocos pasos eliges tu plan y aseguras tu cupo. Sin dolor, a tu ritmo.</p>
+        </div>
+      </div>
+      <div class="oa-steps" id="oaSteps">
+        <div class="oa-step" data-s="1"><span class="dot">1</span><span class="lbl" data-en="Choose plan">Elige tu plan</span></div>
+        <div class="oa-step" data-s="2"><span class="dot">2</span><span class="lbl" data-en="Billing">Facturación</span></div>
+        <div class="oa-step" data-s="3"><span class="dot">3</span><span class="lbl" data-en="Your details">Tus datos</span></div>
+        <div class="oa-step" data-s="4"><span class="dot">4</span><span class="lbl" data-en="Secure payment">Pago seguro</span></div>
+      </div>
+      <div class="oa-trust">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>
+        <span data-en="Encrypted, protected payment with Stripe. Cancel anytime.">Pago protegido y cifrado con Stripe. Cancela cuando quieras.</span>
+      </div>
+    </aside>
+
+    <div class="ob-main">
+      <button class="ob-close" data-ob-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+
+      <!-- STEP 1 · PLAN -->
+      <section class="ob-step" data-step="1">
+        <div class="ob-kick" data-en="Step 1 of 4 · Plan">Paso 1 de 4 · Plan</div>
+        <h2 class="ob-h" data-en="Choose your plan">Elige tu plan</h2>
+        <p class="ob-p" data-en="Pick the option that best supports your process — you can change it whenever you like.">Elige la opción que mejor acompaña tu proceso — puedes cambiarla cuando quieras.</p>
+        <div class="ob-plans" id="obPlans">
+          <button type="button" class="ob-plan" data-key="prueba">
+            <span class="radio"></span>
+            <span class="pinfo"><span class="pnm" data-en="Trial class">Clase de prueba</span><span class="pdesc" data-en="A single session to meet us and feel the method.">Una sesión para conocernos y sentir el método.</span></span>
+            <span class="pprice"><span class="amt">$30.000</span><span class="cad" data-en="one time">una vez</span></span>
+          </button>
+          <button type="button" class="ob-plan" data-key="explora">
+            <span class="radio"></span>
+            <span class="pinfo"><span class="pnm">Explora</span><span class="pdesc" data-en="To start at your own pace in one practice.">Para empezar a tu ritmo en una práctica.</span></span>
+            <span class="pprice"><span class="amt">$240.000</span><span class="cad">/mes</span></span>
+          </button>
+          <button type="button" class="ob-plan sel" data-key="habita">
+            <span class="radio"></span>
+            <span class="pinfo"><span class="pnm">Habita <span class="rib" data-en="Recommended">Recomendado</span></span><span class="pdesc" data-en="Unlimited Pilates + the full somatic method.">Pilates ilimitado + el método somático completo.</span></span>
+            <span class="pprice"><span class="amt">$390.000</span><span class="cad">/mes</span></span>
+          </button>
+          <button type="button" class="ob-plan" data-key="plenitud">
+            <span class="radio"></span>
+            <span class="pinfo"><span class="pnm">Plenitud</span><span class="pdesc" data-en="Total, unlimited access to the whole house.">Acceso total e ilimitado a toda la casa.</span></span>
+            <span class="pprice"><span class="amt">$560.000</span><span class="cad">/mes</span></span>
+          </button>
+        </div>
+        <div class="ob-nav">
+          <span class="grow"></span>
+          <button type="button" class="btn btn-terra" id="obNext1" data-en="Continue">Continuar <span class="arr">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 2 · BILLING -->
+      <section class="ob-step" data-step="2">
+        <div class="ob-kick" data-en="Step 2 of 4 · Billing">Paso 2 de 4 · Facturación</div>
+        <h2 class="ob-h" data-en="How would you like to bill?">¿Cómo quieres facturar?</h2>
+        <p class="ob-p" data-en="Choose monthly flexibility, or save with annual billing — 2 months free.">Elige la flexibilidad mensual, o ahorra con el plan anual — 2 meses de regalo.</p>
+        <div class="ob-billing" id="obBilling">
+          <button type="button" class="on" data-mode="mensual" data-en="Monthly">Mensual</button>
+          <button type="button" data-mode="anual" data-en="Yearly">Anual <span class="sv" data-en="−2 months">−2 meses</span></button>
+        </div>
+        <div class="pay-summary" style="margin-top:28px" id="obBillSummary"></div>
+        <div class="ob-nav">
+          <button type="button" class="ob-back" data-back><span data-en="Back">← Atrás</span></button>
+          <span class="grow"></span>
+          <button type="button" class="btn btn-terra" id="obNext2" data-en="Continue">Continuar <span class="arr">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 3 · DATOS -->
+      <section class="ob-step" data-step="3">
+        <div class="ob-kick" data-en="Step 3 of 4 · Your details">Paso 3 de 4 · Tus datos</div>
+        <h2 class="ob-h" data-en="Who are we welcoming?">¿A quién damos la bienvenida?</h2>
+        <p class="ob-p" data-en="We'll use this to set up your account and confirm your booking.">Con esto configuramos tu cuenta y confirmamos tu reserva.</p>
+        <div class="ob-form">
+          <div class="ob-field"><label data-en="First name">Nombre</label><input class="ob-input" id="fNombre" type="text" placeholder="María" autocomplete="given-name"></div>
+          <div class="ob-field"><label data-en="Last name">Apellido</label><input class="ob-input" id="fApellido" type="text" placeholder="González" autocomplete="family-name"></div>
+          <div class="ob-field full"><label data-en="Email">Correo electrónico</label><input class="ob-input" id="fEmail" type="email" placeholder="maria@correo.com" autocomplete="email"></div>
+          <div class="ob-field full"><label data-en="WhatsApp / phone">WhatsApp / teléfono</label><input class="ob-input" id="fTel" type="tel" placeholder="+57 300 000 0000" autocomplete="tel"></div>
+        </div>
+        <div class="ob-nav">
+          <button type="button" class="ob-back" data-back><span data-en="Back">← Atrás</span></button>
+          <span class="grow"></span>
+          <button type="button" class="btn btn-terra" id="obNext3" data-en="Go to payment">Ir al pago <span class="arr">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 4 · PAGO -->
+      <section class="ob-step" data-step="4">
+        <div class="ob-kick" data-en="Step 4 of 4 · Secure payment">Paso 4 de 4 · Pago seguro</div>
+        <h2 class="ob-h" data-en="Complete your booking">Completa tu reserva</h2>
+        <p class="ob-p" data-en="Enter your card details. This is a demo — use test card 4242 4242 4242 4242.">Ingresa los datos de tu tarjeta. Esto es una demostración — usa la tarjeta de prueba 4242 4242 4242 4242.</p>
+        <div class="pay-grid">
+          <div class="pay-card-wrap">
+            <div class="card-visual">
+              <div class="cv-top"><span class="chip"></span><span class="brand" id="cardBrand">CARD</span></div>
+              <div class="cv-num" id="cardNumDisp">•••• •••• •••• ••••</div>
+              <div class="cv-bot">
+                <span><span class="lbl" data-en="Card holder">Titular</span><span id="cardNameDisp">NOMBRE APELLIDO</span></span>
+                <span><span class="lbl" data-en="Expires">Vence</span><span id="cardExpDisp">MM/AA</span></span>
+              </div>
+            </div>
+            <div class="ob-form" style="margin-top:20px">
+              <div class="ob-field full"><label data-en="Card number">Número de tarjeta</label><input class="ob-input" id="fCard" inputmode="numeric" placeholder="4242 4242 4242 4242" autocomplete="cc-number"></div>
+              <div class="ob-field"><label data-en="Expiry">Vencimiento</label><input class="ob-input" id="fExp" inputmode="numeric" placeholder="MM/AA" autocomplete="cc-exp"></div>
+              <div class="ob-field"><label>CVC</label><input class="ob-input" id="fCvc" inputmode="numeric" placeholder="123" autocomplete="cc-csc"></div>
+            </div>
+          </div>
+          <div class="pay-summary">
+            <h4 data-en="Order summary">Resumen</h4>
+            <div id="obPaySummary"></div>
+            <div class="stripe-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>
+              <span data-en="Secured by Stripe">Protegido por Stripe</span>
+            </div>
+          </div>
+        </div>
+        <div class="ob-nav">
+          <button type="button" class="ob-back" data-back><span data-en="Back">← Atrás</span></button>
+          <span class="grow"></span>
+          <button type="button" class="btn btn-terra" id="obPay" data-en="Pay">Pagar</button>
+        </div>
+        <p class="ob-note" data-en="Demo environment — no real charge is made. Integrate your Stripe keys to go live.">Entorno de demostración — no se realiza ningún cobro real. Integra tus llaves de Stripe para activarlo.</p>
+      </section>
+
+      <!-- STEP 5 · ÉXITO -->
+      <section class="ob-step" data-step="5">
+        <div class="ob-success">
+          <div class="ob-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h2 class="ob-h" data-en="Welcome to IKY!">¡Bienvenida a IKY!</h2>
+          <p class="ob-p" style="margin:0 auto" id="obSuccessMsg" data-en="Your booking is confirmed. We'll write to you on WhatsApp to schedule your first session.">Tu reserva está confirmada. Te escribiremos por WhatsApp para agendar tu primera sesión.</p>
+          <div class="rc" id="obReceipt"></div>
+          <div class="hero-cta" style="justify-content:center">
+            <a class="btn btn-wa" id="obWa" target="_blank" rel="noopener" href="https://wa.me/573153161875"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg> <span data-en="Continue on WhatsApp">Continuar por WhatsApp</span></a>
+            <button type="button" class="btn btn-ghost" data-ob-close data-en="Done">Listo</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/573153161875?text=Hola%20IKY%20Motion%20Hub%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11 11 0 0 0 4.3 3.8c2 .8 2 .5 2.4.5a2.5 2.5 0 0 0 1.6-1.2 2 2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<!-- SERVICE DETAIL MODAL (Pilates) -->
+<div class="svcm" id="svcModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detalle del servicio">
+  <div class="svcm-scrim" data-close></div>
+  <div class="svcm-card">
+    <button type="button" class="svcm-close" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="svcm-hero"><img src="assets/pilates-plank.jpg" alt=""><div class="svcm-kick"><div class="k">Full Pilates</div><h3>Personalizado y Semipersonalizado</h3></div></div>
+    <div class="svcm-body">
+      <p class="svcm-intro">Elige la modalidad que se ajusta a ti. Ambas trabajan control, equilibrio, fuerza, flexibilidad, resistencia, movilidad, respiración y dominio corporal con acompañamiento profesional.</p>
+
+      <div class="acc open" data-acc>
+        <div class="acc-head" data-acc-head>
+          <div class="at"><span class="an">Personalizado</span><span class="ap">Uno a uno</span></div>
+          <span class="aic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="acc-body"><div class="inner">
+          Clases personalizadas de Pilates, guía y acompañamiento profesional y ajustado a tus propios requerimientos.
+          <div class="price"><span class="amt">$120.000</span><span class="per">por clase</span></div>
+        </div></div>
+      </div>
+
+      <div class="acc" data-acc>
+        <div class="acc-head" data-acc-head>
+          <div class="at"><span class="an">Semipersonalizado</span><span class="ap">Máx. 4 estudiantes por clase</span></div>
+          <span class="aic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="acc-body"><div class="inner">
+          Clases semipersonalizadas (máx. 4 estudiantes por clase) donde podrás fortalecer tu cuerpo usando variedad de máquinas y distintas modalidades.
+          <div class="price"><span class="amt">$260.000</span><span class="per">mensuales · 12 clases al mes</span></div>
+        </div></div>
+      </div>
+
+      <div class="svcm-cta"><button type="button" class="btn btn-terra js-book" id="svcmBook" data-practice="Pilates">Reservar ahora <span class="arr">→</span></button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== YouTube video id — pega aquí el ID del video de IKY ===== */
+var IKY_YT_ID = ""; // p.ej. "abc1234XYz" (solo el ID). Vacío = abre el canal/placeholder.
+
+/* header scroll */
+var header=document.getElementById('header');
+addEventListener('scroll',function(){header.classList.toggle('scrolled',scrollY>30)},{passive:true});
+
+/* reveal */
+var reveals=[].slice.call(document.querySelectorAll('.reveal'));
+function sweep(){var vh=innerHeight||document.documentElement.clientHeight;reveals.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<vh*0.92&&r.bottom>0)el.classList.add('in');});}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:0,rootMargin:'0px 0px -7% 0px'});
+reveals.forEach(function(el){io.observe(el);el.addEventListener('animationend',function(){el.classList.add('shown')});});
+addEventListener('scroll',sweep,{passive:true});sweep();
+setTimeout(function(){reveals.forEach(function(el){el.classList.add('in');el.classList.add('shown')})},1800);
+
+/* theme toggle */
+var themeBtn=document.getElementById('theme');
+function setTheme(t){document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('iky_theme',t)}catch(e){}; if(window.__calSetTheme)window.__calSetTheme(t);}
+themeBtn.addEventListener('click',function(){var cur=document.documentElement.getAttribute('data-theme');setTheme(cur==='dark'?'light':'dark');});
+
+/* language toggle */
+function applyLang(lang){
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(el.getAttribute('data-es')===null){el.setAttribute('data-es',el.innerHTML);}
+    el.innerHTML = lang==='en' ? el.getAttribute('data-en') : el.getAttribute('data-es');
+  });
+  document.documentElement.lang=lang;
+  try{localStorage.setItem('iky_lang',lang)}catch(e){}
+  document.querySelectorAll('#lang button').forEach(function(b){b.classList.toggle('on',b.dataset.lang===lang);});
+}
+document.querySelectorAll('#lang button').forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.lang);});});
+(function(){var l='es';try{l=localStorage.getItem('iky_lang')||'es'}catch(e){}; if(l==='en')applyLang('en'); else document.querySelectorAll('#lang button').forEach(function(b){b.classList.toggle('on',b.dataset.lang==='es')});})();
+
+/* billing toggle */
+var billing=document.getElementById('billing'),pill=document.getElementById('pill');
+var bbtns=[].slice.call(billing.querySelectorAll('button'));
+function posPill(btn){pill.style.width=btn.offsetWidth+'px';pill.style.transform='translateX('+(btn.offsetLeft-5)+'px)';}
+function setMode(mode){
+  bbtns.forEach(function(b){b.classList.toggle('active',b.dataset.mode===mode);});
+  posPill(billing.querySelector('button.active'));
+  document.querySelectorAll('.plan .val').forEach(function(v){v.style.opacity=0;setTimeout(function(){v.textContent=v.dataset[mode];v.style.opacity=1;},170);});
+  document.querySelectorAll('.plan .billed').forEach(function(b){
+    if(mode==='anual'){b.textContent=b.dataset.anual;}
+    else{b.textContent=(document.documentElement.lang==='en')?'Flexible monthly billing':'Facturación mensual flexible';}
+  });
+}
+bbtns.forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.mode);});});
+addEventListener('load',function(){posPill(billing.querySelector('button.active'));});
+addEventListener('resize',function(){posPill(billing.querySelector('button.active'));});
+posPill(bbtns[0]);
+
+/* slider */
+var slider=document.getElementById('slider');
+function slideBy(d){slider.scrollBy({left:d*348,behavior:'smooth'});}
+document.getElementById('slidePrev').addEventListener('click',function(){slideBy(-1);});
+document.getElementById('slideNext').addEventListener('click',function(){slideBy(1);});
+
+/* video facade */
+var vf=document.getElementById('videoFrame');
+function playVideo(){
+  if(IKY_YT_ID){
+    var ifr=document.createElement('iframe');
+    ifr.src='https://www.youtube.com/embed/'+IKY_YT_ID+'?autoplay=1&rel=0';
+    ifr.allow='accelerated-content; autoplay; encrypted-media; picture-in-picture';
+    ifr.allowFullscreen=true;
+    vf.innerHTML='';vf.appendChild(ifr);
+  } else {
+    window.open('https://www.youtube.com/@ikymotionhub','_blank');
+  }
+}
+vf.addEventListener('click',playVideo);
+vf.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();playVideo();}});
+
+/* short videos facade */
+document.querySelectorAll('.short[data-yt]').forEach(function(s){
+  function play(){
+    var id=s.dataset.yt;
+    var ifr=document.createElement('iframe');
+    ifr.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1';
+    ifr.allow='autoplay; encrypted-media; picture-in-picture';
+    ifr.allowFullscreen=true;
+    s.innerHTML='';s.appendChild(ifr);
+  }
+  s.addEventListener('click',play);
+  s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();play();}});
+});
+
+/* service detail modal (Pilates) */
+(function(){
+  var m=document.getElementById('svcModal'); if(!m) return;
+  function refreshAcc(){m.querySelectorAll('[data-acc].open .acc-body').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});}
+  function openM(){m.classList.add('open');document.body.style.overflow='hidden';m.setAttribute('aria-hidden','false');requestAnimationFrame(refreshAcc);}
+  function closeM(){m.classList.remove('open');document.body.style.overflow='';m.setAttribute('aria-hidden','true');}
+  m.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closeM);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open'))closeM();});
+  m.querySelectorAll('[data-acc]').forEach(function(acc){
+    var head=acc.querySelector('[data-acc-head]'),body=acc.querySelector('.acc-body');
+    head.addEventListener('click',function(){
+      var willOpen=!acc.classList.contains('open');
+      acc.classList.toggle('open',willOpen);
+      body.style.maxHeight=willOpen?body.scrollHeight+'px':'0px';
+    });
+  });
+  var rb=document.getElementById('svcmBook'); if(rb) rb.addEventListener('click',closeM);
+  document.querySelectorAll('[data-svc="pilates"]').forEach(function(b){
+    b.addEventListener('click',function(e){e.preventDefault();openM();});
+  });
+})();
+
+/* ===== ONBOARDING / RESERVA ===== */
+(function(){
+  var ob=document.getElementById('ob');
+  if(!ob) return;
+  var PLANS={
+    prueba:{name:'Clase de prueba',nameEn:'Trial class',once:30000},
+    explora:{name:'Explora',nameEn:'Explora',m:240000,a:200000},
+    habita:{name:'Habita',nameEn:'Habita',m:390000,a:325000},
+    plenitud:{name:'Plenitud',nameEn:'Plenitud',m:560000,a:466000}
+  };
+  var state={key:'habita',billing:'mensual',practice:null};
+  function isEn(){return document.documentElement.lang==='en';}
+  function t(es,en){return isEn()?en:es;}
+  function money(n){return '$'+Math.round(n).toLocaleString('es-CO');}
+  function planName(k){return isEn()?PLANS[k].nameEn:PLANS[k].name;}
+  // amount + cadence for a plan/billing
+  function charge(){
+    var p=PLANS[state.key];
+    if(p.once) return {total:p.once,cad:t('una vez','one time'),per:null};
+    if(state.billing==='anual') return {total:p.a*12,cad:t('/año','/year'),per:p.a};
+    return {total:p.m,cad:t('/mes','/month'),per:null};
+  }
+
+  // ---- open / close ----
+  function open(opts){
+    opts=opts||{};
+    if(opts.plan){var k=opts.plan.toLowerCase();if(PLANS[k])state.key=k;}
+    state.practice=opts.practice||null;
+    // reflect selection
+    ob.querySelectorAll('.ob-plan').forEach(function(el){el.classList.toggle('sel',el.dataset.key===state.key);});
+    goStep(1);
+    ob.classList.add('open');
+    document.body.style.overflow='hidden';
+    ob.setAttribute('aria-hidden','false');
+  }
+  function close(){
+    ob.classList.remove('open');
+    document.body.style.overflow='';
+    ob.setAttribute('aria-hidden','true');
+    resetPay();
+  }
+  window.__ikyBook=open;
+
+  // ---- step nav ----
+  var stepsEl=ob.querySelectorAll('.ob-step');
+  var railEl=ob.querySelectorAll('#oaSteps .oa-step');
+  var current=1;
+  function goStep(n){
+    current=n;
+    stepsEl.forEach(function(s){s.classList.toggle('show',+s.dataset.step===n);});
+    // rail: dots 1..4, step5 => all done
+    railEl.forEach(function(r){
+      var d=+r.dataset.s;
+      r.classList.remove('active','done');
+      var eff=(n===5)?5:n;
+      if(d<eff) r.classList.add('done');
+      else if(d===eff) r.classList.add('active');
+    });
+    if(n===2) renderBillSummary();
+    if(n===4) renderPaySummary();
+    var main=ob.querySelector('.ob-main'); if(main) main.scrollTop=0;
+  }
+  function next1(){ goStep(state.key==='prueba'?3:2); }
+
+  // ---- plan select ----
+  ob.querySelectorAll('.ob-plan').forEach(function(el){
+    el.addEventListener('click',function(){
+      state.key=el.dataset.key;
+      ob.querySelectorAll('.ob-plan').forEach(function(p){p.classList.toggle('sel',p===el);});
+    });
+  });
+
+  // ---- billing ----
+  var billBtns=ob.querySelectorAll('#obBilling button');
+  billBtns.forEach(function(b){b.addEventListener('click',function(){
+    billBtns.forEach(function(x){x.classList.toggle('on',x===b);});
+    state.billing=b.dataset.mode;
+    renderBillSummary();
+  });});
+
+  function summaryRows(){
+    var c=charge(),p=PLANS[state.key],rows='';
+    rows+='<div class="pay-row"><span>'+t('Plan','Plan')+'</span><span class="v">'+planName(state.key)+'</span></div>';
+    if(!p.once){
+      rows+='<div class="pay-row"><span>'+t('Facturación','Billing')+'</span><span class="v">'+(state.billing==='anual'?t('Anual · 2 meses gratis','Annual · 2 months free'):t('Mensual','Monthly'))+'</span></div>';
+    }
+    if(c.per){
+      rows+='<div class="pay-row"><span>'+t('Equivalente','Per month')+'</span><span class="v">'+money(c.per)+t('/mes','/mo')+'</span></div>';
+    }
+    rows+='<div class="pay-total"><span class="tl">'+t('Total hoy','Total today')+'</span><span class="tv">'+money(c.total)+' <small>'+c.cad+'</small></span></div>';
+    return rows;
+  }
+  function renderBillSummary(){document.getElementById('obBillSummary').innerHTML='<h4>'+t('Resumen','Summary')+'</h4>'+summaryRows();}
+  function renderPaySummary(){document.getElementById('obPaySummary').innerHTML=summaryRows();
+    var c=charge(); var pb=document.getElementById('obPay');
+    pb.innerHTML=t('Pagar ','Pay ')+money(c.total);
+  }
+
+  // ---- validation helpers ----
+  function markErr(el,bad){el.classList.toggle('err',bad);return !bad;}
+  function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+
+  document.getElementById('obNext1').addEventListener('click',next1);
+  document.getElementById('obNext2').addEventListener('click',function(){goStep(3);});
+  document.getElementById('obNext3').addEventListener('click',function(){
+    var n=document.getElementById('fNombre'),e=document.getElementById('fEmail');
+    var ok=true;
+    ok=markErr(n,!n.value.trim())&&ok;
+    ok=markErr(e,!validEmail(e.value.trim()))&&ok;
+    if(ok) goStep(4);
+  });
+
+  // back buttons
+  ob.querySelectorAll('[data-back]').forEach(function(b){
+    b.addEventListener('click',function(){
+      if(current===2) goStep(1);
+      else if(current===3) goStep(state.key==='prueba'?1:2);
+      else if(current===4) goStep(3);
+    });
+  });
+
+  // close triggers
+  ob.querySelectorAll('[data-ob-close]').forEach(function(b){b.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ob.classList.contains('open'))close();});
+
+  // ---- card formatting ----
+  var fCard=document.getElementById('fCard'),fExp=document.getElementById('fExp'),fCvc=document.getElementById('fCvc');
+  var numDisp=document.getElementById('cardNumDisp'),brandEl=document.getElementById('cardBrand'),expDisp=document.getElementById('cardExpDisp'),nameDisp=document.getElementById('cardNameDisp');
+  function brandOf(d){
+    if(/^4/.test(d))return'VISA';
+    if(/^(5[1-5]|2[2-7])/.test(d))return'Mastercard';
+    if(/^3[47]/.test(d))return'AMEX';
+    if(/^6/.test(d))return'Discover';
+    return'CARD';
+  }
+  fCard.addEventListener('input',function(){
+    var d=fCard.value.replace(/\D/g,'').slice(0,16);
+    fCard.value=d.replace(/(.{4})/g,'$1 ').trim();
+    numDisp.textContent=d?(fCard.value+'•••• •••• •••• ••••'.slice(fCard.value.length)):'•••• •••• •••• ••••';
+    brandEl.textContent=d?brandOf(d):'CARD';
+    fCard.classList.remove('err');
+  });
+  fExp.addEventListener('input',function(){
+    var d=fExp.value.replace(/\D/g,'').slice(0,4);
+    if(d.length>=3)d=d.slice(0,2)+'/'+d.slice(2);
+    fExp.value=d;expDisp.textContent=d||'MM/AA';fExp.classList.remove('err');
+  });
+  fCvc.addEventListener('input',function(){fCvc.value=fCvc.value.replace(/\D/g,'').slice(0,4);fCvc.classList.remove('err');});
+  document.getElementById('fNombre').addEventListener('input',syncName);
+  document.getElementById('fApellido').addEventListener('input',syncName);
+  function syncName(){
+    var n=(document.getElementById('fNombre').value+' '+document.getElementById('fApellido').value).trim();
+    nameDisp.textContent=(n||'NOMBRE APELLIDO').toUpperCase();
+  }
+
+  // ---- pay ----
+  var payBtn=document.getElementById('obPay');
+  function resetPay(){payBtn.disabled=false;var c=charge();payBtn.innerHTML=t('Pagar ','Pay ')+money(c.total);}
+  payBtn.addEventListener('click',function(){
+    var cd=fCard.value.replace(/\s/g,''),ok=true;
+    ok=markErr(fCard,cd.length<15)&&ok;
+    ok=markErr(fExp,fExp.value.length<5)&&ok;
+    ok=markErr(fCvc,fCvc.value.length<3)&&ok;
+    if(!ok)return;
+    payBtn.disabled=true;
+    payBtn.innerHTML='<span class="ob-spin"></span> '+t('Procesando…','Processing…');
+    setTimeout(function(){
+      renderReceipt();
+      goStep(5);
+      payBtn.disabled=false;
+    },1700);
+  });
+
+  function renderReceipt(){
+    var c=charge();
+    var nombre=(document.getElementById('fNombre').value+' '+document.getElementById('fApellido').value).trim();
+    var email=document.getElementById('fEmail').value.trim();
+    var last4=fCard.value.replace(/\s/g,'').slice(-4);
+    var rows='';
+    rows+='<div class="pay-row"><span>'+t('Plan','Plan')+'</span><span class="v">'+planName(state.key)+'</span></div>';
+    if(!PLANS[state.key].once)rows+='<div class="pay-row"><span>'+t('Facturación','Billing')+'</span><span class="v">'+(state.billing==='anual'?t('Anual','Annual'):t('Mensual','Monthly'))+'</span></div>';
+    if(nombre)rows+='<div class="pay-row"><span>'+t('A nombre de','Name')+'</span><span class="v">'+nombre+'</span></div>';
+    rows+='<div class="pay-row"><span>'+t('Tarjeta','Card')+'</span><span class="v">•••• '+(last4||'••••')+'</span></div>';
+    rows+='<div class="pay-total"><span class="tl">'+t('Pagado','Paid')+'</span><span class="tv">'+money(c.total)+' <small>'+c.cad+'</small></span></div>';
+    document.getElementById('obReceipt').innerHTML=rows;
+    // whatsapp link
+    var msg=t('Hola IKY, acabo de reservar el plan '+planName(state.key)+'. Mi nombre es '+nombre+'.','Hi IKY, I just booked the '+planName(state.key)+' plan. My name is '+nombre+'.');
+    document.getElementById('obWa').href='https://wa.me/573153161875?text='+encodeURIComponent(msg);
+  }
+
+  // ---- wire triggers ----
+  document.querySelectorAll('.js-book').forEach(function(b){
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      open({plan:b.dataset.plan,practice:b.dataset.practice});
+    });
+  });
+})();
+</script>
+
+<!-- Cal.com inline embed -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "feldenkrais", {origin:"https://app.cal.com"});
+  Cal.config = Cal.config || {};
+  Cal.config.forwardQueryParams = true;
+  Cal.ns.feldenkrais("inline", {
+    elementOrSelector:"#my-cal-inline-feldenkrais",
+    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme": (document.documentElement.getAttribute('data-theme')==='dark'?'dark':'light')},
+    calLink: "ikymotionhubmkt/feldenkrais",
+  });
+  Cal.ns.feldenkrais("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#a4663d"},"dark":{"cal-brand":"#cda86a"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  window.__calSetTheme=function(t){ try{ Cal.ns.feldenkrais("ui",{"theme":t}); }catch(e){} };
+</script>
+</body>
+</html>
